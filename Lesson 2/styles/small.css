@@ -1,0 +1,83 @@
+body{
+    display: block;
+    width: 100%;
+    height: auto;
+    line-height: 1.15;
+    background-color: white;
+}
+
+header,footer{
+    font-size: 1.0rem;
+    display:block;
+    background-color: #001b29;
+    color: aliceblue;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 100%;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 100%;
+    height: auto;
+}
+h1, h2, h3{
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+h2{
+    font-family: 'Open Sans', sans-serif;
+}
+h3{
+    background-color: #003652;
+    color: aliceblue;
+    padding-left: 10px;
+}
+section{
+    font-size: 1.0rem;
+    background-color: #CCD8DF;
+    color: black;
+    border: solid #001b29 1px;
+    border-radius: 10px;
+    max-width: 100%;
+    height:auto
+}
+section a{
+    padding-left: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+.card-2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*.card-2 img{
+    height:452px;
+}*/
+
+section h4{
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 10px;
+    font-weight: 300;
+
+}
+section img{
+    width: 100%;
+    padding-top: 20px;
+}
+p{
+    padding: 10px;
+}
+footer h4{
+    color: aliceblue;
+    font-weight: 300;
+}

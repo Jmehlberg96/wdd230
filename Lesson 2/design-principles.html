@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Principles Document</title>
+    <meta name="description" content="Assingment: Week 2 Design Principles Document">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/small.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Open+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Design Principles Document</h1>
+        <h2>Jennifer Mehlberg</h2>
+    </header>
+
+    <main>
+
+        <section class="card-1">
+
+            <h3>Visual Hierarchy</h3>
+
+            <div>
+                <h4>Missouri Star Quilt Co.</h4>
+                <a href="https://www.missouriquiltco.com/">https://www.missouriquiltco.com/</a>
+                <img src="images/missouristarquiltco.png" alt="missouriStarQuiltCompany">
+                <p>I picked this particular website to show the principle of visual hierarchy. You can see by the
+                    bold font and bright colors on the ad for their sale, that this is the first thing
+                    the company wants you to look at. It has great contrast that directs your
+                    vision to that spot, using capital letters and exclamation points to help the 
+                    viewer understand the importance of this sale. The straight lines cutting off
+                    the top of the round shape in a dramatic way makes the eye focus on that point. Then with the bold change in the font 
+                    color to yellow draws the viewers eye in even further telling them to read this ad before anything else.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="card-2">
+
+            <h3>White Space</h3>
+
+            <div>
+                <h4>Calm</h4>
+                <a href="https://www.calm.com/">https://www.calm.com/</a>
+                <img src="images/calm.png" alt="calm">
+                <p>This website is a great example of the design principle of white space.
+                    Each heading element is separated beautifully, helping the viewer read 
+                    clearly the text. Each button element is consistently spaced with room to 
+                    view the amazing scene in the background. The designer really got the message of peace and 
+                    tranquility across with not only the imagery but also the spatial awareness
+                    around each element. This web design fits perfectly the product that this website is trying to selling. Telling the viewer
+                    there is space to move, space to breathe, space to grow. There is definitely no crowding here.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="card-3">
+
+            <h3>Repetition</h3>
+
+            <div>
+                <h4>Hike Saint George</h4>
+                <a href="https://hikestgeorge.com/">https://hikestgeorge.com/</a>
+                <img src="images/hikestgeroge.png" alt="missouriStarQuiltCompany">
+                <p>This website does a great job at showing the design principle of repetition. You can see
+                    that by the repeated design in the box style, icons, link fonts, and one-line paragraphs. Everything
+                    is clean and consistent and aligned just right. The contrast is repeated throughout along with the beautiful crisp 
+                    photography that hooks the viewer and pulls them in at the top of each page. The repetition in this website makes the viewer feel 
+                    calm and comfortable knowing that they can explore this website with confidence and not get lost in a mess of links and pages.
+                    Each page flows into the next effortlessly without any surprises due to the consistent repetition in the design.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <h4> &copy;<span id="year"></span> | Jennifer Mehlberg | Last Updated: <span id='lastUpdate'></span> </h4>
+    </footer>
+
+    <script>
+        const options = {year: 'numeric'};
+        document.querySelector('#year').innerHTML = new Date().toLocaleDateString('en-US', options);
+        document.getElementById('lastUpdate').textContent = document.lastModified
+    </script>
+    
+</body>
+
+</html>
