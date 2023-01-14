@@ -13,6 +13,7 @@
     <link href="styles/normalize.css" rel="stylesheet">
     <link href="styles/small.css" rel="stylesheet">
     <link href="styles/medium.css" rel="stylesheet">
+    <script src="scripts/script.js" defer></script>
 </style>
 </head> 
     
@@ -20,7 +21,7 @@
         <div id="content">
             
             <header>
-                <img src="images/brianjen.jpg" alt="Picture of Me">
+                <img src="images/brian-jen.jpg" alt="Picture of Me">
                 <h1>Jennifer Mehlberg</h1>
             </header>
             
@@ -40,14 +41,14 @@
             </main>
             <footer>
                 <h4> &copy;<span id="year"></span> | Jennifer Mehlberg | Utah, USA </h4>
-                <h4>Last Updated: <span id='lastUpdate'></span> </h4>
+                <h4>Last Updated: <span id='last-update'></span> </h4>
             </footer>
             <script>
                 const options = {
                     year: 'numeric'
                 };
                 document.querySelector('#year').innerHTML = new Date().toLocaleDateString('en-US', options);
-                document.getElementById('lastUpdate').textContent = document.lastModified
+                document.getElementById('last-update').textContent = document.lastModified
             </script>
         </div>
     </body>
