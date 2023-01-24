@@ -21,15 +21,16 @@
 }
 
 body {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 4em;
   font-size: 18px;
   text-align: center;
+  padding: 0;
 }
 nav{
   display: block;
   background-color:var(--secondary-color);
+  width: 100%;
 }
 nav li {
   list-style: none;
@@ -74,6 +75,7 @@ header {
   text-align: center;
   color: var(--paragraph-color-on-color);
   background-color: var(--primary-color);
+  width: 100%;
 }
 header img{
   max-width: 200px;
@@ -88,11 +90,19 @@ p {
   color: var(--paragraph-color);
   padding: 1em;
 }
-.colors {
+.colors1 {
   width: 100%;
   min-width: 350px;
   margin: 30px auto;
   text-align: center;
+  
+}
+.colors2 {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+  
 }
 .colors th {
   background-color: #999;
