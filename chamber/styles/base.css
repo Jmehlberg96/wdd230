@@ -159,17 +159,18 @@ main{
     height: auto;
   }
 #hero-wrapper{
-    background-color: gray;
+    background-color:white;
     width: 100%;
     height: auto;
-    margin: 5px 2.5px 5px 2.5px;
+    margin: 5px 5px 5px 5px;
     padding: 60px 0px 60px 0px; 
+    border: 0.1rem solid #233311;
   }
   .card {
     width: 100%;
     height: auto;
-    margin: 5px 2.5px 5px 2.5px;
-    padding: 30px 0px 30px 0px;
+    margin: 5px 5px 5px 5px;
+    padding: 30px 5px 30px 5px;
   }
   #hero-img{
     max-width: 100%;
@@ -177,36 +178,41 @@ main{
   }
 
   #event{
-    background-color: gray;
+    background-color:white;
+    border: 0.1rem solid #233311;
   }
 
   #weather{
-    background-color: gray; 
+    background-color:white;
+    border: 0.1rem solid #233311;
   }
 
   #join{
-    background-color: gray; 
+    background-color:white;
+    border: 0.1rem solid #233311; 
   }
 
-  #spotlight{
-    background-color: gray; 
-  }
 #news{
-    background-color: gray;
+    background-color:white;
+    border: 0.1rem solid #233311;
     
 }
 #spotlight{
   display:flex;
- flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: row;
+  background-color:white;
+  padding-right: 5px;
+  margin-left: 5px;
 }
 .small-card{
-  background-color: darkslategray;
-  color:antiquewhite;
+  background-color:white;
+  color:var(--primary-color);
   width: 100%;
   height: auto;
-  margin: 5px 2.5px 5px 2.5px;
+  margin: 5px 5px 5px 5px;
   padding: 30px 0px 30px 0px;
+  border: 0.1rem solid #233311;
+
 }
 
   footer{
