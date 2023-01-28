@@ -160,21 +160,13 @@ main{
   }
 #hero-wrapper{
     background-color:white;
-    width: 100%;
-    height: auto;
-    margin: 5px 5px 5px 5px;
+    margin: 5px 10px 5px 10px;
     padding: 60px 0px 60px 0px; 
     border: 0.1rem solid #233311;
   }
   .card {
-    width: 100%;
-    height: auto;
-    margin: 5px 5px 5px 5px;
+    margin: 5px 10px 5px 10px;
     padding: 30px 5px 30px 5px;
-  }
-  #hero-img{
-    max-width: 100%;
-    height: auto;
   }
 
   #event{
@@ -201,15 +193,13 @@ main{
   display:flex;
   flex-direction: row;
   background-color:white;
-  padding-right: 5px;
-  margin-left: 5px;
 }
 .small-card{
   background-color:white;
   color:var(--primary-color);
   width: 100%;
   height: auto;
-  margin: 5px 5px 5px 5px;
+  margin: 5px 10px 5px 10px;
   padding: 30px 0px 30px 0px;
   border: 0.1rem solid #233311;
 
