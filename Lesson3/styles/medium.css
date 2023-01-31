@@ -19,7 +19,7 @@
     }
       
       header > h1 {
-        font-size: 2.0rem;
+        font-size: 80px;
         grid-column: 2/4;
         grid-row: 1/2;
         margin-bottom: -40px;
@@ -28,9 +28,10 @@
         
       }
       header > h2 {
-        font-size: 1.5rem;
+        font-size: 25px;
         grid-column: 2/4;
         grid-row: 2/3;
+        margin-top: 20px;
       }
       img {
         display: block;

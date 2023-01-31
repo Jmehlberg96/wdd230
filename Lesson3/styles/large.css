@@ -1,11 +1,11 @@
 @media (min-width: 900px){
 
     header > h1 {
-        font-size: 3.0rem;
+        font-size: 100px;
     }
     header > h2 {
-        font-size: 2.0rem;
-        margin-top: -40px;
+        font-size: 35px;
+        margin-top: 20px;
     }
     header img{
         max-width: 300px;

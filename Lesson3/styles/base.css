@@ -1,12 +1,10 @@
 
 :root {
-  --primary-color: #283618ff  ;
-  --secondary-color: #606c38ff ;
-  --accent1-color: #fefae0ff;
-  --accent2-color: #dda15eff;
+  --primary-color: #fefae0ff;
+  --secondary-color: #dda15eff;
+  --accent1-color: #233311;
+  --accent2-color: #606c38ff;
   --accent3-color: #bc6c25ff;
-
-
 
   
   --heading-font: 'Della Respira', sans-serif,'Bitter', serif;
@@ -29,7 +27,7 @@ body {
 }
 nav{
   display: block;
-  background-color:var(--secondary-color);
+  background-color:var(--accent2-color);
   width: 100%;
 }
 nav li {
@@ -58,37 +56,52 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
 }
-h1, h2{
+h1{
+    font-size: 50px;
     font-weight: 300;
 }
 h2 {
   text-align: center;
+  font-weight: 300;
+  font-size: 25px;
+  margin-top: 5px;
+}
+header>h2{
+  margin-top: -20px;
 }
 hr {
   height: 3px;
   margin: 35px 0;
-  background: var(--secondary-color);
+  background: var(--accent2-color);
 }
 header {
   display: block;
   padding-bottom: 20px;
   text-align: center;
   color: var(--paragraph-color-on-color);
-  background-color: var(--primary-color);
+  background-color: var(--accent1-color);
   width: 100%;
 }
 header img{
   max-width: 200px;
   max-height: auto;
+  padding-top: 20px;
 }
 header > h1, header > h2 {
   color: var(--headline-color-on-color);
 }
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
 
 p {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color);
   padding: 1em;
+  text-align: left;
 }
 .colors1 {
   width: 100%;
