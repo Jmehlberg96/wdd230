@@ -27,6 +27,35 @@
     text-align: center;
     padding: 0;
   }
+  .banner-wrapper{
+    background-color: var(--accent2-color);
+    
+  }
+  .banner-content{
+    padding: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+  }
+  .banner-text{
+    flex-grow: 1;
+    line-height: 1.4;
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+
+  }
+  .banner-button{
+    background: none;
+    border: none;
+  }
+  .banner-text,
+  .banner-button > span{
+    color: var(--primary-color);
+  }
+
   header{
     display: grid;
     grid-template-columns: 1fr 4fr 1fr 1fr;
@@ -60,7 +89,7 @@
   }
   .social{
     grid-column: 4/5;
-    grid-row: 4/5;
+    grid-row: 3/4;
     display: flex;
     flex-direction: row;
     padding-right: 10px;
@@ -75,11 +104,11 @@
 
   nav{
     grid-column: 1/5;
-    grid-row: 1/2;
+    grid-row: 3/4;
     display: flex;
     flex-direction: column;
     background-color:var(--accent1-color);
-    width: 200px;
+    width: 100%;
     
   
   }
@@ -131,7 +160,7 @@ nav ul.open {display: block;}
 
 #hamburgerBtn span:nth-child(1){     
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 #hamburgerBtn span:nth-child(2){display: none;}
 
@@ -139,7 +168,7 @@ nav ul.open {display: block;}
 
 #hamburgerBtn.open span:nth-child(2){     
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 #date{
@@ -160,11 +189,12 @@ main{
     height: auto;
   }
 .hero-wrapper{
+    display: flex;
     position: relative;
-    background-color:white;
-    margin: 5px 10px 5px 10px;
-    border: 0.1rem solid #233311;
-   
+  }
+  #hero-image{
+    width: 100%;
+    height: auto;
   }
 .join-button{
   display: flex;
@@ -172,64 +202,120 @@ main{
   bottom: 20px;
   right: 20px;
   background-color: var(--accent2-color);
-  border-radius: 5px;
   border-color: #233311;
   text-align: center;
   justify-content: center;
   width: 100px;
   height: 30px;
-  box-shadow: 0 0 10px #777;
-
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  border-radius: 10px;
 }
 .join-us{
   color: var(--primary-color);
   font-size: 20px;
   background: var(--accent2-color);
   border: none;
+  text-decoration: none;
+  padding-top: 5px;
+  width: 90%;
 }
 .join-us a:hover{
   background-color: var(--secondary-color);
   color: #233311;
 }
   .card {
-    margin: 5px 10px 5px 10px;
-    padding: 30px 5px 30px 5px;
+    margin: 10px 10px 5px 10px;
+  }
+  .card-wrapper{
+    position: relative;
   }
 
   #event{
-    background-color:white;
-    border: 0.1rem solid #233311;
+    background-color: #db5346;
   }
-
+  #event-img{
+    width: 100%;
+    height: auto;
+  }
   #weather{
-    background-color:white;
-    border: 0.1rem solid #233311;
+    background-color:var(--secondary-color);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
   }
-
   #join{
-    background-color:white;
-    border: 0.1rem solid #233311; 
+    background-color:#3f4851;
+  }
+  #join-img{
+    width: 100%;
+    height: auto;
+  }
+  .join-button2{
+    display: flex;
+    position:absolute;
+    bottom: 280px;
+    right: 80px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    border-color: #233311;
+    text-align: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+  
+  }
+  .join-us2{
+    color: var(--headline-color-on-white);
+    font-size: 25px;
+    background: var(--primary-color);
+    border: none;
+    padding-top: 10px;
+    text-decoration: none;
+    width: 90%;
+  }
+  .join-us2 a:hover{
+    background-color: #233311;
+    color: var(--primary-color);
   }
 
 #news{
-    background-color:white;
+    background-color:var(--accent2-color);
     border: 0.1rem solid #233311;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: var(--primary-color);
     
 }
 #spotlight{
   display:flex;
   flex-direction: row;
   background-color:white;
+  column-gap: 10px;
 }
 .small-card{
+  display: flex;
   background-color:white;
   color:var(--accent1-color);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+}
+#hometown-bank{
   width: 100%;
   height: auto;
-  margin: 5px 10px 5px 10px;
-  padding: 30px 0px 30px 0px;
-  border: 0.1rem solid #233311;
-
+}
+#blue-sky{
+  width: 100%;
+  height: auto;
+  padding-left: 10px;
+}
+#green-valley-energy{
+  width: 100%;
+  height: auto;
+}
+#spotlight3{
+  display: none;
 }
 
   footer{

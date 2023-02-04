@@ -1,7 +1,14 @@
 const dateUK = document.querySelector("#date");
 const now = new Date();
+const day = now.getDay();
 const fullDateUK = new Intl.DateTimeFormat("en-UK",{
     dateStyle: "full"}).format(now);
+    if (day == 1 || day == 2){
+        document.querySelector(".banner-wrapper").style.display = "block";
+    }
+    else { document.querySelector(".banner-wrapper").style.display = "none";
+    
+    }
 
 dateUK.innerHTML = `<em>${fullDateUK}</em>`;
 
@@ -16,3 +23,8 @@ function toggleMenu(){
 }
 const x = document.getElementById('hamburgerBtn')
 x.onclick = toggleMenu
+
+document.querySelector(".banner-button").addEventListener('click', function() {
+    this.closest(".banner-wrapper").style.display = "none";
+});
+

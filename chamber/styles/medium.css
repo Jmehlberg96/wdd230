@@ -26,11 +26,8 @@
         font-size: 30px;
         margin-top: -20px;
       }
-      nav{
-        align-items: flex-end;
-      }
       nav ul{
-        width: 250px;
+        width: 80%;
       }
       
       .social img{
@@ -42,13 +39,6 @@
         font-size: 30px;
        
       }
-
-    .card {
-        padding: 60px 0 60px 0;}
-    
-      .small-card{
-        padding: 60px 0 60px 0;
-      }
       .join-button{
         width: 175px;
         height: 40px;
@@ -57,6 +47,7 @@
       .join-us{
        font-size: 22px;
       }
+     
       
    
 }

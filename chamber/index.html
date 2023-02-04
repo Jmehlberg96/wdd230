@@ -15,9 +15,20 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/main.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 </head>
 <body>
+    <div class="banner-wrapper">
+        <div class="banner-content">
+            <div class="banner-text">
+                <strong>Reminder! </strong>Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+            </div>
+            <button type="button" class="banner-button">
+                <span class="material-symbols-outlined">close</span> 
+            </button>
+        </div>
+    </div>
     <header>
         <div id=logo-wrapper>
             <img id="logo" src="images/logo.png" alt="green-valley-logo">
@@ -30,10 +41,10 @@
             <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
             <ul id="primaryNav">
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="">Discover</a></li>
-                <li><a href="">Directory</a></li>
-                <li><a href="">Join</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="social">
@@ -48,33 +59,54 @@
     </header>
     <main>
         <div class="hero-wrapper">
-            <img id="hero-image" src="images/gv-hero.jpg" alt="hero-image">
-            <div class="join-button" >
-                <button class="join-us" a href="join.html">Join Us</a></button>
+            <img id="hero-image" src="images/hero.jpg" alt="hero-image">
+            <div class="join-button">
+                <a href="join.html"class="join-us">Join Us</a>
+            </div>
+        </div>
+        <div class="card-wrapper">
+            <div class=card id="event">
+                <img id="event-img" src="images/event.png" alt="event">
+            </div>
+            <div class=card id="weather">
+                <h1>🌤️Partly Sunny</h1>
+                <h2>Monday</h2>
+                <h2>54&#176/28&#176</h2>
+            </div>
+            <div class="card" id="join">
+                <img id="join-img" src="images/join.png" alt="join">
+                <div class="join-button2">
+                    <a href="join.html" class="join-us2">Join Us</a>
+                </div>
             </div>
         </div>
         <div class=card id="news">
-            <p>News Release</p>
+            <strong>News Headline</strong><p>Ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Qui, omnis ex! Et, expedita. Dolorem porro voluptas minus eius autem. 
+                Iste voluptate beatae eos fuga exercitationem optio rem, 
+                obcaecati temporibus laboriosam!</p>
+            <p>Ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni 
+                laborum aut veritatis, vitae adipisci accusamus nihil nobis enim repellat 
+                a excepturi eos, fuga neque deleniti nesciunt saepe tenetur harum laboriosam.</p>
+            <strong>News Headline</strong><p>Ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni 
+                laborum aut veritatis, vitae adipisci accusamus nihil nobis enim repellat 
+                a excepturi eos, fuga neque deleniti nesciunt saepe tenetur harum laboriosam.</p>
+            <p>Ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni 
+                laborum aut veritatis, vitae adipisci accusamus nihil nobis enim repellat 
+                a excepturi eos, fuga neque deleniti nesciunt saepe tenetur harum laboriosam.</p>
         </div>
+        
         <div  id="spotlight">
             <div class="small-card" id="spotlight1">
-                <p>Spotlight 1</p>
+                <img id="blue-sky" src="images/blue-sky.png" alt="blue-sky-airlines">
             </div>
             <div class="small-card" id="spotlight2">
-                <p>Spotlight 2</p>
+                <img id="hometown-bank" src="images/hometown-bank.png" alt="hometown-bank">
+            </div>
+            <div class="small-card" id="spotlight3">
+                <img id="green-valley-energy" src="images/green-valley-energy.png" alt="green-valley-energy">
             </div>
         </div>
-        <div class="card" id="join">
-            <p>Join</p>
-        </div>
-        <div class=card id="event">
-            <p>Event</p>
-        </div>
-        <div class=card id="weather">
-            <p>Weather</p>
-        </div>
-       
-
     </main>
     <footer>
         <div id="footer-img-wrapper">
@@ -87,7 +119,7 @@
         <div id="contact">
             <p>contact.us@greenvalleychamber.com</p>
             <p>435-555-5309</p>
-            <a href="https://goo.gl/maps/PAxbLpriZ7H3Tt3s5">Location Map</a>
+            <a href="https://goo.gl/maps/PAxbLpriZ7H3Tt3s5">📍Location Map</a>
         </div>
         <section id="baseline"><p> &copy;<span id="year"></span>Green Valley Chamber | Jennifer Mehlberg |WDD 230 Project | Last Updated: <span id='last-update'></span> </p></section>
     </footer>
