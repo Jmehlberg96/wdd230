@@ -1,10 +1,10 @@
 
 :root {
     --primary-color: #fefae0ff;
-    --secondary-color: #dda15eff;
+    --secondary-color: #E7BB88;
     --accent1-color: #233311;
     --accent2-color: #606c38ff;
-    --accent3-color: #bc6c25ff;
+    --accent3-color: #221307;
   
   
   
@@ -17,7 +17,7 @@
     --headline-color-on-color: white; /* headlines on a colored background */ 
     --paragraph-color-on-white: black; /* paragraph text on a white background */ 
     --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-    --paragraph-background-color: #bc6c25ff;
+    --paragraph-background-color: #221307;
   }
 
   body {
@@ -83,9 +83,14 @@
   header h1{
     font-size: 50px;
     margin: 0;
+    text-shadow: 0 0 20px black;
   }
   header h2{
     margin-top: 0px;
+  }
+  h2{
+    font-family: var(--heading-font);
+    font-weight: 300;
   }
   .social{
     grid-column: 4/5;
@@ -144,7 +149,7 @@
     color: white;
 }
   nav ul li a:hover{
-    background-color: var(--secondary-color);
+    background-color: #BC6C25;
     color: white;   
 }
   nav button {
@@ -216,108 +221,87 @@ main{
   background: var(--accent2-color);
   border: none;
   text-decoration: none;
-  padding-top: 5px;
   width: 90%;
 }
 .join-us a:hover{
   background-color: var(--secondary-color);
   color: #233311;
 }
+hr{
+  height: 3px;
+  margin: 15px 15px;
+  background: var(--accent3-color);
+  border: none;
+}
   .card {
-    margin: 10px 10px 5px 10px;
+    margin: 10px 10px 10px 10px;
+    text-shadow: 0 0 10px black;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .card-wrapper{
     position: relative;
+    background-color: var(--primary-color);
   }
 
   #event{
-    background-color: #db5346;
+    background-color:var(--accent2-color);
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+  
   }
-  #event-img{
-    width: 100%;
-    height: auto;
-  }
+
   #weather{
-    background-color:var(--secondary-color);
-    padding-top: 50px;
-    padding-bottom: 50px;
+    background-color: #BC6C25;
+    color: white;
+    text-shadow: 0 10px 10px black;
     
   }
   #join{
-    background-color:#3f4851;
-  }
-  #join-img{
-    width: 100%;
-    height: auto;
-  }
-  .join-button2{
-    display: flex;
-    position:absolute;
-    bottom: 280px;
-    right: 80px;
-    background-color: var(--primary-color);
-    border-radius: 5px;
-    border-color: #233311;
-    text-align: center;
-    justify-content: center;
-    width: 200px;
-    height: 50px;
-    box-shadow: 0 0 10px rgb(0, 0, 0);
-  
-  }
-  .join-us2{
-    color: var(--headline-color-on-white);
-    font-size: 25px;
-    background: var(--primary-color);
-    border: none;
-    padding-top: 10px;
-    text-decoration: none;
-    width: 90%;
-  }
-  .join-us2 a:hover{
-    background-color: #233311;
-    color: var(--primary-color);
+    display: none;
   }
 
 #news{
     background-color:var(--accent2-color);
     border: 0.1rem solid #233311;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 10px;
     color: var(--primary-color);
+  
     
 }
 #spotlight{
-  display:flex;
-  flex-direction: row;
-  background-color:white;
+  background-color:var(--primary-color);
   column-gap: 10px;
 }
+#spotlight1{
+  background-color: var(--accent2-color);
+  color: white;
+}
+#spotlight2{
+  background-color: var(--accent2-color);
+  color: white;
+}
+#spotlight3{
+  display: none;
+}
+#spotlight h2{
+  text-shadow: 0 0 10px black;
+}
 .small-card{
-  display: flex;
   background-color:white;
   color:var(--accent1-color);
   padding-top: 5px;
   padding-bottom: 5px;
   padding-right: 10px;
+  margin: 10px;
+  line-height: .7;
 }
-#hometown-bank{
-  width: 100%;
-  height: auto;
+.emoji{
+  font-size: 50px;
+  text-shadow: 0 0 10px black;
+  margin: 0;
 }
-#blue-sky{
-  width: 100%;
-  height: auto;
-  padding-left: 10px;
-}
-#green-valley-energy{
-  width: 100%;
-  height: auto;
-}
-#spotlight3{
-  display: none;
-}
-
   footer{
     display:flex;
     flex-direction: column;

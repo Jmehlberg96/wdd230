@@ -44,7 +44,6 @@
         flex-direction: column;
         background-color:var(--accent2-color);
         height: 200px;
-        color:white;
       }
       .join-button{
         width: 175px;
@@ -59,7 +58,7 @@
       .join-button2{
         display: flex;
         position:absolute;
-        bottom: 50px;
+        bottom: 20px;
         background-color: var(--primary-color);
         border-radius: 5px;
         border-color: #233311;
@@ -83,5 +82,15 @@
       .join-us2 a:hover{
         background-color: #233311;
         color: var(--primary-color);
-      } 
+      }
+      #weather{
+        
+      }
+      #news{
+        
+      }
+    
+     
+      
+   
 }

@@ -8,14 +8,15 @@
     <meta name="description" content="A chamber of commerce website for the Green Valley area. This site promotes and supports local businesses and tourism">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" >
     <link href="https://fonts.googleapis.com/css2?family=Della+Respira&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
     <link href="styles/normalize.css" rel="stylesheet">
     <link href="styles/base.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/main.js" defer></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="scripts/windchill.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" >
 
 </head>
 <body>
@@ -30,13 +31,15 @@
         </div>
     </div>
     <header>
-        <div id=logo-wrapper>
-            <img id="logo" src="images/logo.png" alt="green-valley-logo">
-        </div>
-        <section id="heading">
+        <picture id=logo-wrapper>
+            <source srcset="images/logo.webp" media="(min-width: 900px)">
+            <source srcset="images/logo150.webp" media="(min-width: 400px)">
+            <img id="logo" src="images/logo75.webp" alt="green-valley-logo">
+        </picture>
+        <div id="heading">
             <h1>Green Valley</h1>
             <div><h2>Chamber of Commerce</h2></div>
-        </section>
+        </div>
         <nav>
             <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
             <ul id="primaryNav">
@@ -58,60 +61,82 @@
         <div id="date"></div>
     </header>
     <main>
-        <div class="hero-wrapper">
-            <img id="hero-image" src="images/hero.jpg" alt="hero-image">
+        <picture class="hero-wrapper">
+            <source media="(min-width: 900px)" srcset="images/placeholder-large.png 1x">
+            <source media="(min-width: 400px)" srcset="images/placeholder-med.png 1x">
+            <img id="hero-image" src="images/placeholder-small.png" alt="hero-image" loading="lazy" width="981" height="568">
             <div class="join-button">
-                <a href="join.html"class="join-us">Join Us</a>
+                <a href="join.html" class="join-us">Join Us</a>
             </div>
-        </div>
+        </picture>
         <div class="card-wrapper">
             <div class=card id="event">
-                <img id="event-img" src="images/event.png" alt="event">
+                <h2 id="event-title">Ribbon Cutting Event</h2>
+                <p class="emoji">✂️</p>
+                <p id="event-subtitle">Urban Charm Boutique</p>
+                <p id="event-details">Join us for the grand opening of Urban Charm on Wednesday, March 15th at 10am.</p>
             </div>
             <div class=card id="weather">
-                <h1>🌤️Partly Sunny</h1>
-                <h2>Monday</h2>
-                <h2>54&#176/28&#176</h2>
+                <p class="emoji">🌤️</p>
+                <h2>Partly Sunny</h2>
+                <p>Monday</p>
+                <p><span id="temperature">40</span>℉</p>
+                <hr>
+                <p>Wind Speed: <span id="wind-speed">10</span>m/h</p>
+                <p>Wind Chill: <span id="wind-chill"></span></p>
             </div>
             <div class="card" id="join">
-                <img id="join-img" src="images/join.png" alt="join">
                 <div class="join-button2">
                     <a href="join.html" class="join-us2">Join Us</a>
                 </div>
+                <p id="join-info">Discover how to join the Green Valley Chamber and see how it will benefit your business.</p>
             </div>
         </div>
         <div class=card id="news">
-            <strong>News Headline</strong><p>Ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            <h2>News Headline</h2>
+            <p>Ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                 Qui, omnis ex! Et, expedita. Dolorem porro voluptas minus eius autem. 
                 Iste voluptate beatae eos fuga exercitationem optio rem, 
                 obcaecati temporibus laboriosam!</p>
             <p>Ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni 
                 laborum aut veritatis, vitae adipisci accusamus nihil nobis enim repellat 
-                a excepturi eos, fuga neque deleniti nesciunt saepe tenetur harum laboriosam.</p>
-            <strong>News Headline</strong><p>Ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni 
-                laborum aut veritatis, vitae adipisci accusamus nihil nobis enim repellat 
-                a excepturi eos, fuga neque deleniti nesciunt saepe tenetur harum laboriosam.</p>
-            <p>Ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni 
-                laborum aut veritatis, vitae adipisci accusamus nihil nobis enim repellat 
-                a excepturi eos, fuga neque deleniti nesciunt saepe tenetur harum laboriosam.</p>
+                a excepturi eos, fuga neque deleniti nesciunt saepe tenetur harum laboriosam.
+                Qui, omnis ex! Et, expedita. Dolorem porro voluptas minus eius autem. 
+                Iste voluptate beatae eos fuga exercitationem optio rem, 
+                obcaecati temporibus laboriosam!</p>
         </div>
         
         <div  id="spotlight">
             <div class="small-card" id="spotlight1">
-                <img id="blue-sky" src="images/blue-sky.png" alt="blue-sky-airlines">
+                <h2>BlueSky Airlines</h2>
+                <p class="emoji">✈️</p>
+                <p>"Clear skies with BlueSky"</p>
+                <hr>
+                <p>www.blueskyair.com</p>
+                <p>435-555-8946</p>
             </div>
             <div class="small-card" id="spotlight2">
-                <img id="hometown-bank" src="images/hometown-bank.png" alt="hometown-bank">
+                <h2>Green Valley Energy</h2>
+                <p class="emoji">🍃</p>
+                <p>"Wind energy, Clean energy"</p>
+                <hr>
+                <p>www.gvenergy.com</p>
+                <p>435-555-4652</p>
             </div>
             <div class="small-card" id="spotlight3">
-                <img id="green-valley-energy" src="images/green-valley-energy.png" alt="green-valley-energy">
+                <h2>Hometown Bank</h2>
+                <p class="emoji">🏦</p>
+                <p>"Where your money is home."</p>
+                <hr>
+                <p>www.hometownbank.com</p>
+                <p>435-555-6231</p>
             </div>
         </div>
     </main>
     <footer>
-        <div id="footer-img-wrapper">
+        <picture id="footer-img-wrapper">
             <img src="images/logo.png" alt="green-valley-logo">
-        </div>
+        </picture>
         <div id="location">
             <p id="footer-title">Green Valley Chamber of Commerce</p>
             <p id="address">136 N 100 E, Green Valley, UT 84770</p>
@@ -121,7 +146,7 @@
             <p>435-555-5309</p>
             <a href="https://goo.gl/maps/PAxbLpriZ7H3Tt3s5">📍Location Map</a>
         </div>
-        <section id="baseline"><p> &copy;<span id="year"></span>Green Valley Chamber | Jennifer Mehlberg |WDD 230 Project | Last Updated: <span id='last-update'></span> </p></section>
+        <div id="baseline"><p> &copy;<span id="year"></span>Green Valley Chamber | Jennifer Mehlberg |WDD 230 Project | Last Updated: <span id='last-update'></span> </p></div>
     </footer>
 
     
