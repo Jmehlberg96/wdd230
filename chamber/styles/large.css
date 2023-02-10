@@ -17,8 +17,6 @@
         grid-column: 2/4;
       }
       header img{
-        max-width: 200px;
-        max-height: auto;
         padding-left: 20px;
       }
       nav button{ display: none;}
