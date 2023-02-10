@@ -205,6 +205,10 @@
     footer p{
       margin: 0;
     }
+    footer img{
+      width: 220px;
+      height: 146px;
+    }
 
   }
 

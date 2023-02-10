@@ -135,8 +135,9 @@
     </main>
     <footer>
         <picture id="footer-img-wrapper">
-            <img src="images/logo.png" alt="green-valley-logo">
-        </picture>
+            <source srcset="images/logo.webp" media="(min-width: 900px)">
+            <source srcset="images/logo150.webp" media="(min-width: 400px)">
+            <img id="logo" src="images/logo75.webp" alt="green-valley-logo">        </picture>
         <div id="location">
             <p id="footer-title">Green Valley Chamber of Commerce</p>
             <p id="address">136 N 100 E, Green Valley, UT 84770</p>

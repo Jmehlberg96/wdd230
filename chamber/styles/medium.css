@@ -84,4 +84,8 @@
         background-color: #233311;
         color: var(--primary-color);
       } 
+      footer img{
+        width: 150px;
+        height: 110px;
+      }
 }
