@@ -22,8 +22,8 @@ body {
   max-width: 100%;
   margin: 0 auto;
   font-size: 18px;
-  text-align: center;
   padding: 0;
+ 
 }
 nav{
   display: block;
@@ -61,7 +61,6 @@ h1{
     font-weight: 300;
 }
 h2 {
-  text-align: center;
   font-weight: 300;
   font-size: 25px;
   margin-top: 5px;
@@ -94,6 +93,8 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: left;
+  text-align: justify;
+  
 }
 
 
@@ -107,14 +108,13 @@ p {
   width: 100%;
   min-width: 350px;
   margin: 30px auto;
-  text-align: center;
+ 
   
 }
 .colors2 {
   width: 100%;
   min-width: 350px;
   margin: 30px auto;
-  text-align: center;
   
 }
 .colors th {
