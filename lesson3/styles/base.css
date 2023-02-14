@@ -26,9 +26,12 @@ body {
  
 }
 nav{
-  display: block;
+  display: flex;
   background-color:var(--accent2-color);
   width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: space-evenly;
 }
 nav li {
   list-style: none;
@@ -96,7 +99,14 @@ main{
   text-align: justify;
   
 }
-
+.title-wrapper{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#colors-wrapper{
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
 p {
   font-family: var(--paragraph-font);
