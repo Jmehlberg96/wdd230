@@ -10,7 +10,7 @@
   
     
     --heading-font: 'Della Respira', sans-serif, serif;
-    --paragraph-font: 'Quicksand', serif,'Della Respira', sans-serif;
+    --paragraph-font: 'Georgia', 'Times New Roman','Della Respira', sans-serif;
   
     
     --headline-color-on-white: #283618ff;  /* headlines on a white background */ 
@@ -60,7 +60,6 @@
     display: grid;
     grid-template-columns: 1fr 4fr 1fr 1fr;
     background-color: var(--accent1-color);
-    padding: 5px 0;
     max-width: 100%;
   }
   #logo-wrapper{
@@ -177,7 +176,7 @@ nav ul.open {display: block;}
 
 #date{
   grid-column: 1/5;
-    background-color: var(--accent2-color);
+    background-color: rgb(63, 73, 30);
     color: var(--primary-color);
     width: 100%;
     height: auto;
@@ -270,7 +269,7 @@ hr{
     
 }
 #spotlight{
-  background-color:var(--primary-color);
+  background-color:rgb(63, 73, 30);
   column-gap: 10px;
 }
 #spotlight1{
@@ -288,13 +287,14 @@ hr{
   text-shadow: 0 0 10px black;
 }
 .small-card{
-  background-color:white;
-  color:var(--accent1-color);
+  background-color:var(--accent2-color);
+  color:var(--primary-color);
   padding-top: 5px;
   padding-bottom: 5px;
   padding-right: 10px;
   margin: 10px;
   line-height: .7;
+  border: 3px 0px 3px 0px solid white;
 }
 .emoji{
   font-size: 50px;
@@ -355,3 +355,47 @@ hr{
   #baseline{
     padding-bottom: 20px;
   }
+  /* discover page*/
+  #discover-main{
+    display: flex;
+  }
+ 
+  #content-wrapper{
+    text-align: justify;
+    padding: 0px 20px 0px 40px;
+  }
+  #image-wrapper{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+  }
+  .discover-img{
+    object-fit: cover;
+    height: 100%;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+  .discover-img p{
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .discover-img img{
+    width: 300px;
+    height: 265px;
+    filter: blur(0em);
+    transition: filter 0.5s;
+    border: 3px solid var(--accent1-color);
+}
+.discover-img img[data-src]{
+    filter: blur(0.2em);
+}
+#discover-spotlight{
+  background-color: rgb(63, 73, 30);
+}
+.discover-img img:hover{
+  box-shadow: 0 0 0px #333;
+}

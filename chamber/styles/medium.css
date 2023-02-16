@@ -84,8 +84,13 @@
         background-color: #233311;
         color: var(--primary-color);
       } 
+     
       footer img{
         width: 150px;
         height: 110px;
       }
+      .discover-img > img:hover{
+        box-shadow: 0 0 50px #333;
+      }
+     
 }
