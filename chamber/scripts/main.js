@@ -47,4 +47,3 @@ let daysSince = (Date.now() - lastTime) / 84600000;
 let rounded = Math.round(daysSince);
 todayDisplay.textContent = rounded;
 
-
