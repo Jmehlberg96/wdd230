@@ -1,8 +1,8 @@
-const temp1 = document.querySelector("#temperature");
-const wind1 = document.querySelector("#wind-speed");
+const temp1 = document.getElementById("temperature");
+const wind1 = document.getElementById("wind-speed");
 
-let temp = parseInt(temp1.textContent);
-let wind = parseInt(wind1.textContent);
+let temp = parseInt(temp1);
+let wind = parseInt(wind1);
 let chill = 0;
 //calculate wind chill
 if(temp <= 50 && wind > 3){
@@ -17,5 +17,5 @@ if(temp <= 50 && wind > 3){
     document.querySelector("#wind-chill").textContent = result;
 }
 else{
-    document.querySelector("#wind-chill").textContent = "N/A";
+    document.getElementById("wind-chill").textContent = "N/A";
 }

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Valley Chamber of Commerce Discover</title>
-    <meta name="description" content="Discover all the many great things about Green Valley. See the beauty and discover the fun people from all around enjoy.">
+    <title>Green Valley Chamber of Commerce Thank You</title>
+    <meta name="description" content="A thank you page to let the user know that their form has been submitted for review.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="favicon.ico" type="image/x-icon" >
@@ -60,88 +60,15 @@
         </div>
         <div id="date"></div>
     </header>
-    <main id="join-main">
+    <main id="discover-main">
         <section id="title-wrapper">
-            <picture>
-                <source media="(min-width: 900px)" srcset="images/join-header-lg.png 1x" >
-                <source media="(min-width: 400px)" srcset="images/join-header-img.png 1x" >
-                <img src="images/join-header-sm.png" alt="join-header-image" loading="lazy" width="2000">
-            </picture>
-            <h1>Join Our Chamber</h1>
+            <h1>Thank You</h1>
         </section>
-        <form method="get" action="thankyou.html">
-            <fieldset>
-                <input type="hidden" name="load_time" value="" id="load_time">
-                <legend>Applicant Information</legend>
-                <label class="top">First Name*<input type="text" name="fname" required></label>
-                <label class="top">Last Name*<input type="text" name="lname" required></label>
-                <label class="top">Business Name*<input type="text" name="business" required></label>
-                <label class="top">Position<input type="text" name="position" pattern="[a-zA-Z\s\-]{7,}" title="Please enter a valid position name (minimum 7 characters, only letters, hyphens, and spaces are allowed)"></label>
-                <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
-                <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                <label class="top">Website<input type="url" name="url" placeholder="http://"></label>
-            </fieldset>
-            <fieldset>
-                <legend>Membership Level</legend>
-                <label>
-                    <input type="radio" name="level" id="show-np" onclick="showDetails()" value="np">Non-Profit Membership
-                </label>
-                <div id="np-details" style="display: none;">
-                    <p>Level Details:</p>
-                        <ul>
-                        <li>Fee: Free</li>
-                        <li>Benefits: Training, Advertising, Advocacy</li>
-                        </ul>
-                </div>
-                <label>
-                    <input type="radio" name="level" id="show-bronze" onclick="showDetails()" value="bronze">Bronze Membership
-                </label>
-                <div id="bronze-details" style="display: none;">
-                    <p>Level Details:</p>
-                    <ul>
-                        <li>Fee: $640 </li>
-                        <li>Benefits: Training, Low Level Advertising, Advocacy, Networking</li>
-                    </ul>
-                </div>
-                <label>
-                    <input type="radio" name="level" id="show-silver" value="silver" onclick="showDetails()">Silver Membership
-                </label>
-                <div id="silver-details" style="display: none;">
-                    <p>Level Details:</p>
-                    <ul>
-                        <li>Fee: $1070</li>
-                        <li>Benefits: Training, Mid Level Advertising, Advocacy, Networking, Luncheons</li>
-                    </ul>
-                </div>
-                <label>
-                    <input type="radio" name="level" id="show-gold" onclick="showDetails()" value="gold">Gold Membership
-                </label>
-                <div id="gold-details" style="display: none;">
-                    <p>Level Details:</p>
-                    <ul>
-                        <li>Fee: $1520</li>
-                        <li>Benefits: Training, High Level Spotlight Advertising, Advocacy, Networking, Luncheons, Resources, Discounts</li>
-                    </ul>
-                </div>
-            </fieldset>
-            <fieldset id="business-description">
-                <legend>Business Description</legend>
-                <label for="description">Description:
-                    <textarea id="description" name="description" rows="5" cols="40"></textarea>
-                </label>
-            </fieldset>
-            <input type="submit" value="Submit My Membership" class="submitBtn">
-
-
-
-
-
-
-
-
-
-
-
+        <div id="content-wrapper">
+            <p>
+              Your form has been submitted and we will get back to you within a week.
+            </p>
+        </div>
         <div  id="discover-spotlight">
             <div class="small-card" id="spotlight1">
                 <h2>BlueSky Airlines</h2>
