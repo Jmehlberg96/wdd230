@@ -92,5 +92,32 @@
       .discover-img > img:hover{
         box-shadow: 0 0 50px #333;
       }
+      #join-table{
+        grid-column: 2/3;
+        margin-top: 50px;
+      }
+      #title-wrapper{
+        grid-column: 1/3;
+        grid-row: 1/3;
+      }
+      #join-form{
+        grid-column: 1/2;
+        grid-row: 3/5;
+      }
+      #join-main #discover-spotlight{
+        grid-column: 1/3;
+      }
+      tr:first-child th{
+        font-size: 25px ;
+      }
+      th {
+        font-size: 22px;
+      }
+      .rhead{
+        font-size: 20px;
+      }
+      th, td {
+        padding: 7px 15px;
+      }
      
 }

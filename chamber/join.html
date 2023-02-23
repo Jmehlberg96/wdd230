@@ -69,7 +69,56 @@
             </picture>
             <h1>Join Our Chamber</h1>
         </section>
-        <form method="get" action="thankyou.html">
+        <div id="join-table">
+            <table>
+                <caption>NP = (Non Profit Organization)</caption>
+                <thead>
+                    <tr>
+                        <th colspan="5" scope="colgroup">
+                        Chamber Membership Levels
+                        </th>
+                    </tr>
+                    <tr>
+                        <th id="blank">&nbsp;</th>
+                        <th scope="col">Training</th>
+                        <th scope="col">Advertising</th>
+                        <th scope="col">Discounts</th>
+                        <th scope="col">Fees</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="rhead" scope="row" >NP</td>
+                        <td >Included</td>
+                        <td >Newsletter</td>
+                        <td >N/A</td>
+                        <td >Free</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="rhead">Bronze</td>
+                        <td >Included</td>
+                        <td >Newsletter</td>
+                        <td >N/A</td>
+                        <td >$640</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="rhead">Silver</td>
+                        <td >Included</td>
+                        <td >Directory Page Ad</td>
+                        <td >10%</td>
+                        <td >$1070</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="rhead">Gold</td>
+                        <td> Included</td>
+                        <td >Spotlight Ads (all pages)</td>
+                        <td >20% </td>
+                        <td >$1520</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>   
+        <form id="join-form" method="get" action="thankyou.html">
             <fieldset>
                 <input type="hidden" name="load_time" value="" id="load_time">
                 <legend>Applicant Information</legend>
@@ -90,7 +139,7 @@
                     <p>Level Details:</p>
                         <ul>
                         <li>Fee: Free</li>
-                        <li>Benefits: Training, Advertising, Advocacy</li>
+                        <li>Benefits: Training, Newsletter Advertising, Advocacy</li>
                         </ul>
                 </div>
                 <label>
@@ -100,7 +149,7 @@
                     <p>Level Details:</p>
                     <ul>
                         <li>Fee: $640 </li>
-                        <li>Benefits: Training, Low Level Advertising, Advocacy, Networking</li>
+                        <li>Benefits: Training, Newsletter Advertising, Advocacy, Networking</li>
                     </ul>
                 </div>
                 <label>
@@ -120,7 +169,7 @@
                     <p>Level Details:</p>
                     <ul>
                         <li>Fee: $1520</li>
-                        <li>Benefits: Training, High Level Spotlight Advertising, Advocacy, Networking, Luncheons, Resources, Discounts</li>
+                        <li>Benefits: Training, High Level Spotlight Advertising, Advocacy, Networking, Luncheons, Resources</li>
                     </ul>
                 </div>
             </fieldset>
@@ -131,17 +180,7 @@
                 </label>
             </fieldset>
             <input type="submit" value="Submit My Membership" class="submitBtn">
-
-
-
-
-
-
-
-
-
-
-
+        </form>
         <div  id="discover-spotlight">
             <div class="small-card" id="spotlight1">
                 <h2>BlueSky Airlines</h2>
