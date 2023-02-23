@@ -202,6 +202,7 @@ main{
   #hero-image{
     object-fit: cover;
     height: 100%;
+    width: 100%;
   }
 
 .join-button{
