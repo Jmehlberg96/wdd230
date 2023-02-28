@@ -28,6 +28,7 @@ document.querySelector(".banner-button").addEventListener('click', function() {
     this.closest(".banner-wrapper").style.display = "none";
 });
 
+// number of visits to page 
 const todayDisplay = document.querySelector(".today");
 const visitsDisplay = document.querySelector(".visits");
 
@@ -41,7 +42,7 @@ if (numVisits !== 0) {
 }
 numVisits++;
 localStorage.setItem("visits-ls", numVisits);
-
+// because the number of visits modifies the page, I used lastmodified to fix the day since user has been to the page.
 var lastTime = new Date(document.lastModified).getTime();
 let daysSince = (Date.now() - lastTime) / 84600000;
 let rounded = Math.round(daysSince);
