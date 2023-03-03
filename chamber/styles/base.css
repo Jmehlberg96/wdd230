@@ -612,6 +612,9 @@ section {
 .grid h3{
   display: none;
 }
+.grid .info{
+  margin-top: -20px;
+}
 .directory-img{
   background-color: white;
   box-shadow: 0 0 7px #333;
@@ -623,7 +626,7 @@ section {
   width: 100%;
   height: 100%;
 }
-.grid .membership{
+.grid .membership, .grid .address{
   display: none;
 }
 .list {
