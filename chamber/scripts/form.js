@@ -22,4 +22,4 @@ function showDetails() {
         goldDetails.style.display = "none";    }
 }
 
-document.getElementById("load_time").textContent = new Date().toISOString();
+document.getElementById("load-time").textContent = new Date().toISOString();
