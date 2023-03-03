@@ -1,4 +1,4 @@
-@media only screen and (min-width: 900px){
+@media only screen and (min-width: 851px){
 
       header{
         grid-template-columns: 2fr 3fr 5fr 1fr;
@@ -170,6 +170,9 @@
         grid-column: 1/2;
         grid-row: 1/2;
       }
+      footer p{
+        font-size:18px;
+      }
       #location{
         display: flex;
         flex-direction: column;
@@ -267,6 +270,41 @@
       th, td {
         padding: 7px 15px;
       }
+
+      .grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        column-gap: 20px;
+        row-gap: 20px;
+      }
+      .directory-img{
+       margin: 0;
+      }
+      .grid img{
+        object-fit: scale-down;
+        height: 50%;
+      }
+      .grid section{
+        padding: 0;
+        margin: 0;
+        line-height: .6rem;
+      }
+      .grid p{
+        font-size: 1.75rem;
+      }
+      .list .phone, .list .address, .list .website{
+        display: block;
+        font-size: 1.5rem;
+      }
+      
+      .list .info {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+      .list .info h3{
+        font-size: 30px;
+      }
+      
    
     }
 

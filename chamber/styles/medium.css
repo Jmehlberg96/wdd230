@@ -1,4 +1,4 @@
-@media only screen and (min-width: 400px) and (max-width: 899px) {
+@media only screen and (min-width: 400px) and (max-width: 850px) {
 
 
     header img{
@@ -89,9 +89,15 @@
         width: 150px;
         height: 110px;
       }
+      footer p{
+        margin: 0;
+        font-size:medium;
+      }
+      /*----------------discover---------------*/
       .discover-img > img:hover{
         box-shadow: 0 0 50px #333;
       }
+      /*----------------join--------------------*/
       #join-table{
         grid-column: 2/3;
         margin-top: 50px;
@@ -119,5 +125,19 @@
       th, td {
         padding: 7px 15px;
       }
-     
+      /*-------------------directory----------------*/
+      .grid p{
+        font-size: 1.5rem;
+      }
+      .list .phone, .list .address{
+        display: block;
+      }
+      
+      .list .info {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+      .list .info h3{
+        font-size: 20px;
+      }
 }

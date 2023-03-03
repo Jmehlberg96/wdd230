@@ -362,6 +362,7 @@ hr{
   }
   footer p{
     margin: 0;
+    font-size:smaller;
   }
   #baseline{
     padding-bottom: 20px;
@@ -393,6 +394,7 @@ hr{
   .discover-img p{
     text-align: left;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 5px;
   }
   .discover-img img{
     width: 300px;
@@ -400,6 +402,10 @@ hr{
     filter: blur(0em);
     transition: filter 0.5s;
     border: 3px solid var(--accent1-color);
+}
+.discover-img h2{
+  margin-top: 5px;
+  margin-bottom: 0;
 }
 .discover-img img[data-src]{
     filter: blur(0.2em);
@@ -546,4 +552,109 @@ form label.top input:required:valid{
   display: block;
   border: 1px solid black;
   padding: 0 0 0 10px;
+}
+
+/*--------------------Directory-------------------*/
+section {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  background-color: #ccc;
+}
+#directory-main{
+  display: flex;
+}
+#directory-wrapper {
+	padding-bottom: 20px ;
+	background-color: var(--accent2-color);
+	text-align: center;
+  color: white;
+}
+
+#directory-main h1{
+  text-align: left;
+  margin-left: 20px;
+}
+
+#grid, #list{
+  padding: 10px;
+  margin: 0 10px;
+  height: 60px;
+  background-color: #BC6C25;
+}
+
+#grid:hover, #list:hover{
+  transform: scale(1.2);
+  background-color: white;
+  box-shadow: 0 0 7px #333
+}
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+.grid section{
+  line-height: 1.3rem;
+    box-shadow: 0 0 7px #333;
+    height: 100%;
+    width: 100%;
+    margin: 10px 20px;
+    padding-bottom: 15px;
+    background-color: white;
+}
+.grid img{
+  margin: 10px 0 0 0;
+  width: 100%;
+  height: 100%;
+}
+.grid p{
+  font-size: 1.0rem;
+}
+.grid h3{
+  display: none;
+}
+.directory-img{
+  background-color: white;
+  box-shadow: 0 0 7px #333;
+  margin: 10px;
+  width: 100%;
+  height: 100%;
+}
+.directory-img img{
+  width: 100%;
+  height: 100%;
+}
+.grid .membership{
+  display: none;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list section {
+  margin: 0;
+  padding: 0.25rem;
+}
+.list img{
+  display:none;
+}
+.list .info h3{
+  color: black;
+  font-size: 15px;
+}
+.list .info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.list section:nth-child(even) {
+  background-color: #8d8c8c;
+}
+.list .email, .list .address, .list .phone{
+  display: none;
+}
+.list .membership{
+  display: none;
+}
+.list .website{
+  font-size: 15px;
 }

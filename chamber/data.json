@@ -1,0 +1,115 @@
+{
+    "directory": [
+      {
+        "imglink":"images/bluesky.png",
+        "company": "Blue Sky Airlines",
+        "address": "2415 S River Rd",
+        "city": "Green Valley",
+        "state": "Utah",
+        "zip": 84771,
+        "phone": "435-555-8946",
+        "email": "contact-us@blueskyair.com",
+        "website": "https://blueskyair.com",
+        "membership": "Gold"
+      },
+      {
+        "company": "Green Valley Energy",
+        "address": "197 N Green Valley Dr.",
+        "city": "Green Valley",
+        "state": "Utah",
+        "zip": 84770,
+        "phone": "435-555-4652",
+        "email": "contact@gvenergy.com",
+        "website": "https://gvenergy.com",
+        "imglink": "images/green-energy.png",
+        "membership": "Gold"
+      },
+      {
+        "company": "Red Rock Bikes",
+        "address": "3326 Mountain Crest",
+        "city": "Green Valley",
+        "state": "Utah",
+        "zip": 84772,
+        "phone": "435-555-6689",
+        "email": "redrockbikes@gmail.com",
+        "website": "https://redrockbikes.com",
+        "imglink":"images/redrock.png",
+        "membership": "Bronze"
+      },
+      {
+        "company": "Hometown Bank",
+        "address": "15 W Main St.",
+        "city": "Green Valley",
+        "state": "Utah",
+        "zip": 84770,
+        "phone": "435-555-6231",
+        "email": "contact_us@htbank.com",
+        "website": "https://www.htbank.com",
+        "imglink":"images/hometown.png",
+        "membership": "Gold"
+      },
+      {
+        "company": "Green Valley Medical",
+        "address": "192 Medical Dr.",
+        "city": "Green Valley",
+        "state": "Utah",
+        "zip": 84772,
+        "phone": "435-555-9673",
+        "email": "contact@gvmedical",
+        "website": "https://gvmedical.com",
+        "imglink":"images/medical.png",
+        "membership": "Gold"
+      },
+      {
+        "company": "Shops on Main",
+        "address": "500 W Main St.",
+        "city": "Green Valley",
+        "state": "Utah",
+        "zip": 84770,
+        "phone": "435-555-1313",
+        "email": "shopsonmain@gmail.com",
+        "website": "https://shops-on-main.com",
+        "imglink":"images/shops.png",
+        "membership": "Silver"
+      },
+      {
+        "company": "Tech Ridge",
+        "address": "4590 N River Rd.",
+        "city": "Green Valley",
+        "state": "Utah",
+        "zip": 84771,
+        "phone": "435-555-7745",
+        "email": "contact-us@techridge.com",
+        "website": "https://techridge.com",
+        "imglink":"images/tech_ridge.png",
+        "membership": "Bronze"
+
+      },
+      {
+        "company": "Water Works",
+        "address": "2459 N River Rd.",
+        "city": "Green Valley",
+        "state": "Utah",
+        "zip": 84771,
+        "phone": "435-555-3336",
+        "email": "contact@waterworks.com",
+        "website": "https://gvwaterworks.com",
+        "imglink":"images/water.png",
+        "membership": "Silver"
+
+      },
+      {
+        "company": "Bloomers",
+        "address": "351 E Main St.",
+        "city": "Green Valley",
+        "state": "Utah",
+        "zip": 84770,
+        "phone": "435-555-2352",
+        "email": "bloomers@gmail.com",
+        "website": "https://bloomersflowers.com",
+        "imglink":"images/bloomers.png",
+        "membership": "Bronze"
+
+      }
+    ]
+  }
