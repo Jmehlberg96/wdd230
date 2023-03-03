@@ -289,9 +289,7 @@
         margin: 0;
         line-height: .6rem;
       }
-      .grid p{
-        font-size: 1.75rem;
-      }
+    
       .list .phone, .list .address, .list .website{
         display: block;
         font-size: 1.5rem;
