@@ -1,0 +1,146 @@
+@media only screen and (min-width: 400px) and (max-width: 850px) {
+
+
+    header img{
+        max-width: 180px;
+        max-height: 175px;
+        grid-column: 1/2;
+        grid-row: 1/3;
+      }
+
+      #heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    
+      }
+      #logo-wrapper{
+        grid-column: 1/2;
+        display:flex;
+      }
+    header h1{
+        font-size: 60px;
+        padding-bottom: 20px;
+      }
+    header h2{
+        font-size: 30px;
+        margin-top: -20px;
+      }
+      nav ul{
+        width: 80%;
+      }
+      
+      .social img{
+        width: 40px;
+        height: 40px;
+      }
+
+      #date{
+        font-size: 30px;
+       
+      }
+      #join{
+        display: flex;
+        flex-direction: column;
+        background-color:var(--accent2-color);
+        height: 200px;
+        color:white;
+      }
+      .join-button{
+        width: 175px;
+        height: 40px;
+      }
+      #join-info{
+        color: white;
+      }
+      .join-us{
+        font-size: 22px;
+       }
+      .join-button2{
+        display: flex;
+        position:absolute;
+        bottom: 50px;
+        background-color: var(--primary-color);
+        border-radius: 5px;
+        border-color: #233311;
+        text-align: center;
+        justify-content: center;
+        width: 80%;
+        height: 50px;
+        box-shadow: 0 0 10px rgb(0, 0, 0);
+        margin-left: 60px ;
+      
+      }
+      .join-us2{
+        color: var(--headline-color-on-white);
+        font-size: 25px;
+        background: var(--primary-color);
+        border: none;
+        padding-top: 5px;
+        text-decoration: none;
+        width: 90%;
+      }
+      .join-us2 a:hover{
+        background-color: #233311;
+        color: var(--primary-color);
+      } 
+     
+      footer img{
+        width: 150px;
+        height: 110px;
+      }
+      footer p{
+        margin: 0;
+        font-size:medium;
+      }
+      /*----------------discover---------------*/
+      .discover-img > img:hover{
+        box-shadow: 0 0 50px #333;
+      }
+      /*----------------join--------------------*/
+      #join-table{
+        grid-column: 2/3;
+        margin-top: 50px;
+      }
+      #title-wrapper{
+        grid-column: 1/3;
+        grid-row: 1/3;
+      }
+      #join-form{
+        grid-column: 1/2;
+        grid-row: 3/5;
+      }
+      #join-main #discover-spotlight{
+        grid-column: 1/3;
+      }
+      tr:first-child th{
+        font-size: 25px ;
+      }
+      th {
+        font-size: 22px;
+      }
+      .rhead{
+        font-size: 20px;
+      }
+      th, td {
+        padding: 7px 15px;
+      }
+      /*-------------------directory----------------*/
+      .grid p{
+        font-size: 1.5rem;
+      }
+      .grid .address{
+        display: block;
+      }
+      .list .phone, .list .address{
+        display: block;
+      }
+      
+      .list .info {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+      .list .info h3{
+        font-size: 20px;
+      }
+}
