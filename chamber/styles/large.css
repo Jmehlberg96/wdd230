@@ -88,10 +88,11 @@
       #event{
         margin-top: 15px;
       }
+      #temperature{
+       font-size: 50px;
+      }
       .emoji{
-        font-size: 75px;
-        padding-bottom: 40px;
-        padding-top: 40px;
+        font-size: 50px;
       }
     
       #join{
@@ -104,6 +105,11 @@
         color: white;
         text-shadow: 0 0 10px black;
         background-color: var(--accent2-color);
+        height: 100%;
+      }
+      #join .emoji{
+        display: block;
+        font-size: 90px;
       }
       .join-button2{
         display: grid;

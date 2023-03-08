@@ -306,11 +306,26 @@ hr{
   border: 3px 0px 3px 0px solid white;
 }
 .emoji{
-  font-size: 50px;
-  text-shadow: 0 0 10px black;
+  font-size: 40px;
+  margin: 0;
+  text-shadow: 0 0 15px black;
+}
+#join .emoji{
+  display: none;
+}
+#weather-icon{
+  width: 25%;
   margin: 0;
 }
-
+#temperature{
+  margin: 0;
+}
+#figcaption{
+  margin: 0;
+}
+#temperature{
+  font-size: 30px;
+ }
 /*-----------------FOOTER-----------------*/
   footer{
     display:flex;
