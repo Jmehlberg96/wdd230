@@ -67,7 +67,8 @@
   }
 
   header img{
-    padding-left: 20px;
+    width: 75px;
+    height: 55px;
   }
  #heading{
   grid-column: 1/5;
@@ -314,7 +315,8 @@ hr{
   display: none;
 }
 #weather-icon{
-  width: 25%;
+  width: 50px;
+  height: 50px;
   margin: 0;
 }
 #temperature{

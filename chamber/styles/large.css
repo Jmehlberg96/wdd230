@@ -15,7 +15,8 @@
         grid-column: 2/4;
       }
       header img{
-        padding-left: 20px;
+       width: 220px;
+       height: 146px;
       }
       nav button{ display: none;}
     
