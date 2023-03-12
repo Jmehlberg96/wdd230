@@ -18,7 +18,7 @@ function showList() {
 }
 
 async function getDirectoryData() {
-    const response = await fetch('data.json');
+    const response = await fetch('json/data.json');
     const data = await response.json();
     //console.log(data);
     displayDirectory(data.directory);
@@ -78,3 +78,5 @@ async function getDirectoryData() {
       card.appendChild(info);
     }) // end of forEach loop
   } // end of function expression
+
+  
