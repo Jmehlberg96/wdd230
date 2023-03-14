@@ -726,6 +726,7 @@ form label.top input:required:valid{
 }
 .people .grid {
   row-gap: 20px;
+  justify-content: center;
 }
 #rock-image img{
   display:none;
