@@ -731,3 +731,9 @@ form label.top input:required:valid{
 #rock-image img{
   display:none;
 }
+.intro{
+  display: flex;
+}
+.intro h2{
+  padding-left: 40px;
+}
