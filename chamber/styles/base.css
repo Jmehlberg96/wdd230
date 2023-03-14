@@ -711,10 +711,12 @@ form label.top input:required:valid{
   height: 100%;
   box-shadow: 0 0 15px black;
 }
-#contact-main h1{
+#contact-main h1 {
   position: absolute;
   left: 20px;
+  bottom: 180px;
   color: white;
+  text-shadow: 1px 25px 15px black;
 }
 .people .grid p{
   font-size: 1.0rem;
