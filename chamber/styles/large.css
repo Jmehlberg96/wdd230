@@ -351,6 +351,10 @@
       #contact-main h1{
         font-size: 45px;
       }
+      #directory-button{
+        display: flex;
+        align-items: center;
+      }
       
    
     }
