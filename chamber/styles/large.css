@@ -280,7 +280,7 @@
 
       /*-----------------Directory------------------*/
       #directory-wrapper{
-        justify-content: space-around;
+        justify-content: space-between;
       }
       .grid{
         display: grid;
