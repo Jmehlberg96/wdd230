@@ -1,0 +1,39 @@
+{
+    "staff": [
+        {
+        "imglink":"images/carl-preston.webp",
+        "name": "Carl Preston",
+        "title": "Area Expert",
+        "phone": "435-555-1212 ext: 01",
+        "email": "carl-preston@green-valley-chamber.com"
+        },
+        {
+        "imglink":"images/patrick-rogers.webp",
+        "name": "Patrick Rodgers",
+        "title": "Member Services",
+        "phone": "435-555-1212 ext: 02",
+        "email": "patrick-rogers@green-valley-chamber.com"
+        },
+        {
+        "imglink":"images/sam-smith.webp",
+        "name": "Sam Smith",
+        "title": "Director of Operations",
+        "phone": "435-555-1212 ext: 03",
+        "email": "sam-smith@green-valley-chamber.com"
+        },
+        {
+        "imglink":"images/jane-flemming.webp",
+        "name": "Jane Flemming",
+        "title": "President & CEO",
+        "phone": "435-555-1212 ext: 04",
+        "email": "jane-flemming@green-valley-chamber.com"
+        },
+        {
+        "imglink":"images/sarah-bartlet.webp",
+        "name": "Sarah Bartlet",
+        "title": "Administrative Assistant",
+        "phone": "435-555-1212 ext: 05",
+        "email": "sarah-bartlet@green-valley-chamber.com"
+        }
+    ]
+}

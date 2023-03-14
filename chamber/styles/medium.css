@@ -122,7 +122,15 @@
       th, td {
         padding: 7px 15px;
       }
+
       /*-------------------directory----------------*/
+      #directory-wrapper{
+        justify-content: space-between;
+      }
+      #directory-button{
+        display: flex;
+        align-items: center;
+      }
       .grid p{
         font-size: 1.5rem;
       }
@@ -140,4 +148,17 @@
       .list .info h3{
         font-size: 20px;
       }
+  /*--------------------contact-------------*/
+  .people .grid section {
+    width: 200px; 
+  }
+  .people .grid img{
+    width: 200px;
+    height: 200px;
+  }
+  .people h2{
+      text-align: left;
+      padding-left: 40px;
+      font-size: 30px;
+  }
 }

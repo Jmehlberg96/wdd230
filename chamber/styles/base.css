@@ -103,6 +103,7 @@
    .social img{
     width: 30px;
     height: 30px;
+    padding-left: 10px;
 
   }
   /*------------------NAVIGATION-----------------*/
@@ -385,6 +386,14 @@ hr{
     padding-bottom: 20px;
   }
   /*---------- discover page------------------*/
+  #discover-main #title-wrapper{
+    display: flex;
+    align-items: left;
+    color: white;
+    padding-left: 20px;
+    background-color: var(--accent2-color);
+
+  }
   #discover-main{
     display: flex;
   }
@@ -433,7 +442,7 @@ hr{
 .discover-img img:hover{
   box-shadow: 0 0 0px #333;
 }
-/*-----------------FORM-------------------*/
+/*-----------------JOIN-------------------*/
 form {
   width: 96%;
   margin: 0 10px;
@@ -449,11 +458,12 @@ form {
 #join-main picture img{
   width: 100%;
   height: 100%;
+  box-shadow: 0 0 15px black;
 }
 #join-main h1{
   position: absolute;
   color: white;
-  right: 20px;
+  left: 20px;
 }
 #join-table{
   box-sizing: border-box;
@@ -466,7 +476,7 @@ table {
 }
 
 caption {
-  padding: 10px;
+  padding: 12px;
   caption-side: bottom;
 	color: black;
 	font-size: .85rem;
@@ -511,7 +521,7 @@ form fieldset{
   margin: 2rem 0;
   border: 1px solid var(--accent1-color);
   border-radius: 10px;
-  padding: .5rem 2%;
+  padding: .5rem 5%;
   text-align: left;
   font-size: 20px;
 }
@@ -536,7 +546,7 @@ form label.top input{
   color: #555;
   width: 90%;
   max-width: 20rem;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #eeeaea;
 }
 form label.show-details{
   display: block;
@@ -553,14 +563,15 @@ form input.submitBtn{
   width: 96%;
   max-width: 20rem;
 }
-form label.top input:required{
+form label.top input:required,:required{
   border-left: #BC6C25 solid 6px;
+  background-color: #eeeaea;
 }
 form label.top input:required:valid{
   border-left: var(--accent1-color) solid 6px;
 }
 
-#description {
+#description, #inquiry {
   border: 1px solid #555;
   width: 98%;
 }
@@ -572,11 +583,7 @@ form label.top input:required:valid{
 }
 
 /*--------------------Directory-------------------*/
-section {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0.5rem;
-  background-color: #ccc;
-}
+
 #directory-main{
   display: flex;
 }
@@ -585,6 +592,12 @@ section {
 	background-color: var(--accent2-color);
 	text-align: center;
   color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  background-color: var(--accent2-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 #directory-main h1{
@@ -654,6 +667,7 @@ section {
 .list section {
   margin: 0;
   padding: 0.25rem;
+  background-color: #ccc;
 }
 .list img{
   display:none;
@@ -677,4 +691,38 @@ section {
 }
 .list .website{
   font-size: 15px;
+}
+/*----------------contact-------------*/
+#contact-main{
+  display:flex;
+}
+.info h3{
+  display: block;
+}
+#contact-main #title-wrapper{
+  display: flex;
+  text-align: center;
+}
+#contact-main picture{
+  position: relative;
+}
+#contact-main picture img{
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px black;
+}
+#contact-main h1{
+  position: absolute;
+  left: 20px;
+  color: white;
+}
+.people .grid p{
+  font-size: 1.0rem;
+  padding: 0 10px;
+}
+.people .grid {
+  row-gap: 20px;
+}
+#rock-image img{
+  display:none;
 }
