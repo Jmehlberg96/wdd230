@@ -443,10 +443,10 @@ hr{
   box-shadow: 0 0 0px #333;
 }
 /*-----------------JOIN-------------------*/
-form {
+/*form {
   width: 96%;
   margin: 0 10px;
-}
+}*/
 #join-main #title-wrapper{
   display: flex;
   text-align: center;
@@ -463,9 +463,12 @@ form {
 #join-main h1 {
   position: absolute;
   left: 20px;
-  bottom: 180px;
   color: white;
   text-shadow: 1px 25px 15px black;
+  background-color: #9999996b;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 30px;
 }
 #join-table{
   box-sizing: border-box;
@@ -520,12 +523,13 @@ tbody tr:nth-child(even) {
 form fieldset{
   display: flex;
   flex-direction: column;
-  margin: 2rem 0;
+  margin: 2rem;
   border: 1px solid var(--accent1-color);
   border-radius: 10px;
   padding: .5rem 5%;
   text-align: left;
   font-size: 20px;
+  max-width: 600px;
 }
 form legend{
   color: var(--accent1-color);
@@ -546,8 +550,8 @@ form label.top input{
   border-radius: 4px;
   padding: .75rem;
   color: #555;
-  width: 90%;
-  max-width: 20rem;
+ /* width: 90%;*/
+ /* max-width: 20rem;*/
   background-color: #eeeaea;
 }
 form label.show-details{
@@ -568,6 +572,7 @@ form input.submitBtn{
 form label.top input:required,:required{
   border-left: #BC6C25 solid 6px;
   background-color: #eeeaea;
+  width: 85%;
 }
 form label.top input:required:valid{
   border-left: var(--accent1-color) solid 6px;
@@ -575,7 +580,7 @@ form label.top input:required:valid{
 
 #description, #inquiry {
   border: 1px solid #555;
-  width: 98%;
+  width: 95%;
 }
 #np-details, #bronze-details, #silver-details, #gold-details{
   font-size: large;
@@ -716,9 +721,11 @@ form label.top input:required:valid{
 #contact-main h1 {
   position: absolute;
   left: 20px;
-  bottom: 180px;
   color: white;
   text-shadow: 1px 25px 15px black;
+  background-color: #9999996b;
+  padding: 10px;
+  border-radius: 50px;
 }
 .people .grid p{
   font-size: 1.0rem;
@@ -736,4 +743,8 @@ form label.top input:required:valid{
 }
 .intro h2{
   padding-left: 40px;
+}
+#contact-main #form-wrapper{
+  display: flex;
+  justify-content: center;
 }

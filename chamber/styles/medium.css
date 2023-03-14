@@ -161,4 +161,8 @@
       padding-left: 40px;
       font-size: 30px;
   }
+  #contact-main #join-form{
+    width: 75%;
+  }
+
 }
