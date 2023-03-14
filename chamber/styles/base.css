@@ -460,10 +460,12 @@ form {
   height: 100%;
   box-shadow: 0 0 15px black;
 }
-#join-main h1{
+#join-main h1 {
   position: absolute;
-  color: white;
   left: 20px;
+  bottom: 180px;
+  color: white;
+  text-shadow: 1px 25px 15px black;
 }
 #join-table{
   box-sizing: border-box;
