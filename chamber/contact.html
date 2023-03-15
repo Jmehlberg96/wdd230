@@ -35,7 +35,7 @@
         <picture id=logo-wrapper>
             <source srcset="images/logo.webp" media="(min-width: 900px)">
             <source srcset="images/logo150.webp" media="(min-width: 400px)">
-            <img id="logo" src="images/logo150.webp" alt="green-valley-logo">
+            <img class="logo" src="images/logo150.webp" alt="green-valley-logo">
         </picture>
         <div id="heading">
             <h1>Green Valley</h1>
@@ -62,22 +62,24 @@
         <div id="date"></div>
     </header>
     <main id="contact-main">
-        <section id="title-wrapper">
-            <picture>
-                <source media="(min-width: 900px)" srcset="images/join-header-lg.png 1x" >
-                <source media="(min-width: 400px)" srcset="images/join-header-img.png 1x" >
-                <img src="images/join-header-sm.png" alt="join-header-image" loading="lazy" width="2000">
-            </picture>
-            <h1>Contact Us</h1>
+        <section class="directory-wrapper"">
+            <h2>Contact Us</h2>
         </section>
         <div class="people"> 
-            <div class="intro">
-                <h2>Staff</h2>
-            </div>
             <div class="grid">
             </div>
         </div>
         <div id="form-wrapper">
+            <fieldset id="visit-us">
+                <legend> Visit Us</legend>
+                <p>Green Valley Chamber of Commerce</p>
+                <p>136 N 100 East</p>
+                <p>Green Valley, UT 84770</p>
+                <hr>
+                <p>Monday  9:00 a.m. to 3:00 p.m.</p>
+                <p>Tuesday & Wednesday 9:00 a.m. to 5:00 p.m.</p>
+                <p>Thursday & Friday 12:00 p.m. to 5:00 p.m.</p>
+            </fieldset>
             <form id="join-form" method="get" action="thankyou.html">
                 <fieldset>
                     <input type="hidden" name="loadTime" value="" id="load-time">
@@ -90,51 +92,17 @@
                 </fieldset>
                 <input type="submit" value="Submit My Comment" class="submitBtn">
             </form>
+            <div id="rock-image">
+                <img src="images/rock-arch.webp" alt="rock-arch">
+            </div>
         </div>
-       <div id="rock-image">
-            <img src="images/rock-arch.webp" alt="rock-arch" loading="lazy" width="500" height="500">
-        </div>
-        </div>
-        <div  id="discover-spotlight">
-            <div class="small-card" id="spotlight1">
-                <h2>BlueSky Airlines</h2>
-                <p class="emoji">✈️</p>
-                <p>"Clear skies with BlueSky"</p>
-                <hr>
-                <p>www.blueskyair.com</p>
-                <p>435-555-8946</p>
-            </div>
-            <div class="small-card" id="spotlight2">
-                <h2>Green Valley Energy</h2>
-                <p class="emoji">🍃</p>
-                <p>"Wind energy, Clean energy"</p>
-                <hr>
-                <p>www.gvenergy.com</p>
-                <p>435-555-4652</p>
-            </div>
-            <div class="small-card" id="spotlight3">
-                <h2>Hometown Bank</h2>
-                <p class="emoji">🏦</p>
-                <p>"Where your money is home."</p>
-                <hr>
-                <p>www.hometownbank.com</p>
-                <p>435-555-6231</p>
-            </div>
-            <div class="small-card" id="spotlight4">
-                <h2>Red Rock Bikes</h2>
-                <p class="emoji">🚵</p>
-                <p>"Bikes That Rock"</p>
-                <hr>
-                <p>www.redrockbikes.com</p>
-                <p>435-555-6689</p>
-            </div>
         </div>
     </main>
     <footer>
         <picture id="footer-img-wrapper">
             <source srcset="images/logo.webp" media="(min-width: 900px)">
             <source srcset="images/logo150.webp" media="(min-width: 400px)">
-            <img id="logo" src="images/logo75.webp" alt="green-valley-logo">
+            <img class="logo" src="images/logo75.webp" alt="green-valley-logo">
         </picture>
         <div id="location">
             <p id="footer-title">Green Valley Chamber of Commerce</p>

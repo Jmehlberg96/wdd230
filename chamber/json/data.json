@@ -2,6 +2,7 @@
     "directory": [
       {
         "imglink":"images/bluesky.png",
+        "spotImg": "images/bluesky350.webp",
         "company": "Blue Sky Airlines",
         "address": "2415 S River Rd",
         "city": "Green Valley",
@@ -10,7 +11,8 @@
         "phone": "435-555-8946",
         "email": "contact-us@blueskyair.com",
         "website": "https://blueskyair.com",
-        "membership": "Gold"
+        "membership": "Gold",
+        "motto": "Clear skies with BlueSky"
       },
       {
         "company": "Green Valley Energy",
@@ -22,7 +24,9 @@
         "email": "contact@gvenergy.com",
         "website": "https://green-valley-energy.com",
         "imglink": "images/green-energy.png",
-        "membership": "Gold"
+        "spotImg": "images/green-energy350.webp",
+        "membership": "Gold",
+        "motto": "Wind energy, Clean energy"
       },
       {
         "company": "Red Rock Bikes",
@@ -34,7 +38,9 @@
         "email": "redrockbikes@gmail.com",
         "website": "https://redrockbikes.com",
         "imglink":"images/redrock.png",
-        "membership": "Bronze"
+        "spotImg": "images/redrock350.webp",
+        "membership": "Bronze",
+        "motto": "Bikes That Rock!"
       },
       {
         "company": "Hometown Bank",
@@ -46,7 +52,9 @@
         "email": "contact_us@htbank.com",
         "website": "https://htbank.com",
         "imglink":"images/hometown.png",
-        "membership": "Gold"
+        "spotImg": "images/hometown350.webp",
+        "membership": "Gold",
+        "motto": "Where Your Money is Home"
       },
       {
         "company": "Green Valley Medical",
@@ -58,7 +66,9 @@
         "email": "contact@gvmedical",
         "website": "https://valleymedical.com",
         "imglink":"images/medical.png",
-        "membership": "Gold"
+        "spotImg": "images/medical-center350.webp",
+        "membership": "Gold",
+        "motto": "Wind energy, Clean energy"
       },
       {
         "company": "Shops on Main",
@@ -70,7 +80,9 @@
         "email": "shopsonmain@gmail.com",
         "website": "https://shops-on-main.com",
         "imglink":"images/shops.png",
-        "membership": "Silver"
+        "spotImg": "images/shops350.webp",
+        "membership": "Silver",
+        "motto": "One Place Stop to Shop"
       },
       {
         "company": "Tech Ridge",
@@ -82,8 +94,9 @@
         "email": "contact-us@techridge.com",
         "website": "https://techridge.com",
         "imglink":"images/tech-ridge.png",
-        "membership": "Bronze"
-
+        "spotImg": "images/tech-ridge350.webp",
+        "membership": "Bronze",
+        "motto": "We Are The Future"
       },
       {
         "company": "Water Works",
@@ -95,8 +108,9 @@
         "email": "contact@waterworks.com",
         "website": "https://gvwaterworks.com",
         "imglink":"images/water.png",
-        "membership": "Silver"
-
+        "spotImg": "images/water350.webp",
+        "membership": "Silver",
+        "motto": "Clean Water is Our Life"
       },
       {
         "company": "Bloomers",
@@ -108,8 +122,8 @@
         "email": "bloomers@gmail.com",
         "website": "https://bloomersflowers.com",
         "imglink":"images/bloomers.png",
-        "membership": "Bronze"
-
+        "membership": "Bronze",
+        "motto": "Bloom Where You're Planted"
       }
     ]
   }

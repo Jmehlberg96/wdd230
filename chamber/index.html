@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/main.js" defer></script>
     <script src="scripts/windchill.js" defer></script>
-    <script src="scripts/lazy-loading.js"defer></script>
+    <script src="scripts/lazy-loading.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" >
 
 </head>
@@ -35,7 +36,7 @@
         <picture id=logo-wrapper>
             <source srcset="images/logo.webp" media="(min-width: 900px)">
             <source srcset="images/logo150.webp" media="(min-width: 400px)">
-            <img id="logo" src="images/logo150.webp" alt="green-valley-logo">
+            <img class="logo" src="images/logo150.webp" alt="green-valley-logo">
         </picture>
         <div id="heading">
             <h1>Green Valley</h1>
@@ -61,7 +62,7 @@
         </div>
         <div id="date"></div>
     </header>
-    <main>
+    <main class="home-grid">
         <picture class="hero-wrapper">
             <source media="(min-width: 900px)" srcset="images/gv-hero-large1.webp 1x">
             <source media="(min-width: 400px)" srcset="images/gv-hero-med.webp 1x">
@@ -79,7 +80,7 @@
             </div>
             <div class=card id="weather">
                 <p><span id="temperature"></span>℉</p>
-                <img id="weather-icon"></img>
+                <img id="weather-icon">
                 <h2 id="figcaption"></h2>
                 <hr>
                 <p>Wind Speed: <span id="wind-speed"></span> m/h</p>
@@ -105,40 +106,14 @@
             <p>As the Chamber of Commerce continues to promote economic growth in Green Valley, residents and businesses alike can 
                 look forward to a bright future for this vibrant and thriving community.</p>
         </div>
-        
-        <div  id="spotlight">
-            <div class="small-card" id="spotlight1">
-                <h2>BlueSky Airlines</h2>
-                <p class="emoji">✈️</p>
-                <p>"Clear skies with BlueSky"</p>
-                <hr>
-                <p>www.blueskyair.com</p>
-                <p>435-555-8946</p>
-            </div>
-            <div class="small-card" id="spotlight2">
-                <h2>Green Valley Energy</h2>
-                <p class="emoji">🍃</p>
-                <p>"Wind energy, Clean energy"</p>
-                <hr>
-                <p>www.gvenergy.com</p>
-                <p>435-555-4652</p>
-            </div>
-            <div class="small-card" id="spotlight3">
-                <h2>Hometown Bank</h2>
-                <p class="emoji">🏦</p>
-                <p>"Where your money is home."</p>
-                <hr>
-                <p>www.hometownbank.com</p>
-                <p>435-555-6231</p>
-            </div>
-        </div>
-        
+        <div  class="spotlight">
+        </div>   
     </main>
     <footer>
         <picture id="footer-img-wrapper">
             <source srcset="images/logo.webp" media="(min-width: 900px)">
             <source srcset="images/logo150.webp" media="(min-width: 400px)">
-            <img id="logo" src="images/logo75.webp" alt="green-valley-logo">
+            <img class="logo" src="images/logo75.webp" alt="green-valley-logo">
         </picture>
         <div id="location">
             <p id="footer-title">Green Valley Chamber of Commerce</p>
@@ -150,7 +125,7 @@
             <a href="https://goo.gl/maps/PAxbLpriZ7H3Tt3s5">📍Location Map</a>
         </div>
         <div id="baseline">
-            <p> &copy;<span id="year"></span>Green Valley Chamber | Jennifer Mehlberg |WDD 230 Project | Last Updated: <span id='last-update'></span> | <span class="label">Number of Visits: </span><span class="visits"></span> | Days since last visit: <span class="today"></span> | <a href="https://openweathermap.org/">Open Weather Map</a></a></p>
+            <p> &copy;<span id="year"></span>Green Valley Chamber | Jennifer Mehlberg |WDD 230 Project | Last Updated: <span id='last-update'></span> | <span class="label">Number of Visits: </span><span class="visits"></span> | Days since last visit: <span class="today"></span> | <a href="https://openweathermap.org/">Open Weather Map</a></p>
         </div>
     </footer>
 

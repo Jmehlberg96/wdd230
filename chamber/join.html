@@ -34,7 +34,7 @@
         <picture id=logo-wrapper>
             <source srcset="images/logo.webp" media="(min-width: 900px)">
             <source srcset="images/logo150.webp" media="(min-width: 400px)" >
-            <img id="logo" src="images/logo150.webp" alt="green-valley-logo" >
+            <img class="logo" src="images/logo150.webp" alt="green-valley-logo" >
         </picture>
         <div id="heading">
             <h1>Green Valley</h1>
@@ -61,167 +61,129 @@
         <div id="date"></div>
     </header>
     <main id="join-main">
-        <section id="title-wrapper">
-            <picture>
-                <source media="(min-width: 900px)" srcset="images/join-header-lg.png 1x" >
-                <source media="(min-width: 400px)" srcset="images/join-header-img.png 1x" >
-                <img src="images/join-header-sm.png" alt="join-header-image" loading="lazy" width="2000">
-            </picture>
-            <h1>Join Our Chamber</h1>
+        <section class="directory-wrapper">
+            <h2>Join Our Chamber</h2>
         </section>
-        <div id="join-table">
-            <table>
-                <caption>NP = (Non Profit Organization)</caption>
-                <thead>
-                    <tr>
-                        <th colspan="5" scope="colgroup">
-                        Chamber Membership Levels
-                        </th>
-                    </tr>
-                    <tr>
-                        <th id="blank">&nbsp;</th>
-                        <th scope="col">Training</th>
-                        <th scope="col">Advertising</th>
-                        <th scope="col">Discounts</th>
-                        <th scope="col">Fees</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="rhead" scope="row" >NP</td>
-                        <td >Included</td>
-                        <td >Newsletter</td>
-                        <td >N/A</td>
-                        <td >Free</td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="rhead">Bronze</td>
-                        <td >Included</td>
-                        <td >Newsletter</td>
-                        <td >N/A</td>
-                        <td >$640</td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="rhead">Silver</td>
-                        <td >Included</td>
-                        <td >Directory Page Ad</td>
-                        <td >10%</td>
-                        <td >$1070</td>
-                    </tr>
-                    <tr>
-                        <td scope="row" class="rhead">Gold</td>
-                        <td> Included</td>
-                        <td >Spotlight Ads (all pages)</td>
-                        <td >20% </td>
-                        <td >$1520</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>   
-        <form id="join-form" method="get" action="thankyou.html">
-            <fieldset>
-                <input type="hidden" name="loadTime" value="" id="load-time">
-                <legend>Applicant Information</legend>
-                <label class="top">First Name*<input type="text" name="fname" required></label>
-                <label class="top">Last Name*<input type="text" name="lname" required></label>
-                <label class="top">Business Name*<input type="text" name="business" required></label>
-                <label class="top">Position<input type="text" name="position" pattern="[a-zA-Z\s\-]{7,}" title="Please enter a valid position name (minimum 7 characters, only letters, hyphens, and spaces are allowed)"></label>
-                <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
-                <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                <label class="top">Website<input type="url" name="url" placeholder="http://"></label>
-            </fieldset>
-            <fieldset>
-                <legend>Membership Level</legend>
-                <label>
-                    <input type="radio" name="level" id="show-np" onclick="showDetails()" value="np"> Non-Profit Membership
-                </label>
-                <div id="np-details" style="display: none;">
-                    <p>Level Details:</p>
+        <div id="form-table-wrapper">
+            <div id="join-table">
+                <table>
+                    <caption>NP = (Non Profit Organization)</caption>
+                    <thead>
+                        <tr>
+                            <th colspan="5" scope="colgroup">
+                            Chamber Membership Levels
+                            </th>
+                        </tr>
+                        <tr>
+                            <th id="blank">&nbsp;</th>
+                            <th scope="col">Training</th>
+                            <th scope="col">Advertising</th>
+                            <th scope="col">Discounts</th>
+                            <th scope="col">Fees</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="rhead" scope="row" >NP</th>
+                            <th >Included</th>
+                            <th >Newsletter</th>
+                            <th >N/A</th>
+                            <th >Free</th>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="rhead">Bronze</th>
+                            <td >Included</td>
+                            <td >Newsletter</td>
+                            <td >N/A</td>
+                            <td >$640</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="rhead">Silver</th>
+                            <td >Included</td>
+                            <td >Directory Page Ad</td>
+                            <td >10%</td>
+                            <td >$1070</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="rhead">Gold</th>
+                            <td> Included</td>
+                            <td >Spotlight Ads (all pages)</td>
+                            <td >20% </td>
+                            <td >$1520</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>   
+            <form id="join-form" method="get" action="thankyou.html">
+                <fieldset>
+                    <input type="hidden" name="loadTime" value="" id="load-time">
+                    <legend>Applicant Information</legend>
+                    <label class="top">First Name*<input type="text" name="fname" required></label>
+                    <label class="top">Last Name*<input type="text" name="lname" required></label>
+                    <label class="top">Business Name*<input type="text" name="business" required></label>
+                    <label class="top">Position<input type="text" name="position" pattern="[a-zA-Z\s\-]{7,}" title="Please enter a valid position name (minimum 7 characters, only letters, hyphens, and spaces are allowed)"></label>
+                    <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
+                    <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                    <label class="top">Website<input type="url" name="url" placeholder="http://"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Membership Level</legend>
+                    <label>
+                        <input type="radio" name="level" id="show-np" onclick="showDetails()" value="np"> Non-Profit Membership
+                    </label>
+                    <div id="np-details" style="display: none;">
+                        <p>Level Details:</p>
+                            <ul>
+                            <li>Fee: Free</li>
+                            <li>Benefits: Training, Newsletter Advertising, Advocacy</li>
+                            </ul>
+                    </div>
+                    <label>
+                        <input type="radio" name="level" id="show-bronze" onclick="showDetails()" value="bronze"> Bronze Membership
+                    </label>
+                    <div id="bronze-details" style="display: none;">
+                        <p>Level Details:</p>
                         <ul>
-                        <li>Fee: Free</li>
-                        <li>Benefits: Training, Newsletter Advertising, Advocacy</li>
+                            <li>Fee: $640 </li>
+                            <li>Benefits: Training, Newsletter Advertising, Advocacy, Networking</li>
                         </ul>
-                </div>
-                <label>
-                    <input type="radio" name="level" id="show-bronze" onclick="showDetails()" value="bronze"> Bronze Membership
-                </label>
-                <div id="bronze-details" style="display: none;">
-                    <p>Level Details:</p>
-                    <ul>
-                        <li>Fee: $640 </li>
-                        <li>Benefits: Training, Newsletter Advertising, Advocacy, Networking</li>
-                    </ul>
-                </div>
-                <label>
-                    <input type="radio" name="level" id="show-silver" value="silver" onclick="showDetails()"> Silver Membership
-                </label>
-                <div id="silver-details" style="display: none;">
-                    <p>Level Details:</p>
-                    <ul>
-                        <li>Fee: $1070</li>
-                        <li>Benefits: Training, Mid Level Advertising, Advocacy, Networking, Luncheons</li>
-                    </ul>
-                </div>
-                <label>
-                    <input type="radio" name="level" id="show-gold" onclick="showDetails()" value="gold"> Gold Membership
-                </label>
-                <div id="gold-details" style="display: none;">
-                    <p>Level Details:</p>
-                    <ul>
-                        <li>Fee: $1520</li>
-                        <li>Benefits: Training, High Level Spotlight Advertising, Advocacy, Networking, Luncheons, Resources</li>
-                    </ul>
-                </div>
-            </fieldset>
-            <fieldset id="business-description">
-                <legend>Business Description</legend>
-                <label for="description">Description:
-                    <textarea id="description" name="description" rows="5" cols="40"></textarea>
-                </label>
-            </fieldset>
-            <input type="submit" value="Submit My Membership" class="submitBtn">
-        </form>
-        <div  id="discover-spotlight">
-            <div class="small-card" id="spotlight1">
-                <h2>BlueSky Airlines</h2>
-                <p class="emoji">✈️</p>
-                <p>"Clear skies with BlueSky"</p>
-                <hr>
-                <p>www.blueskyair.com</p>
-                <p>435-555-8946</p>
-            </div>
-            <div class="small-card" id="spotlight2">
-                <h2>Green Valley Energy</h2>
-                <p class="emoji">🍃</p>
-                <p>"Wind energy, Clean energy"</p>
-                <hr>
-                <p>www.gvenergy.com</p>
-                <p>435-555-4652</p>
-            </div>
-            <div class="small-card" id="spotlight3">
-                <h2>Hometown Bank</h2>
-                <p class="emoji">🏦</p>
-                <p>"Where your money is home."</p>
-                <hr>
-                <p>www.hometownbank.com</p>
-                <p>435-555-6231</p>
-            </div>
-            <div class="small-card" id="spotlight4">
-                <h2>Red Rock Bikes</h2>
-                <p class="emoji">🚵</p>
-                <p>"Bikes That Rock"</p>
-                <hr>
-                <p>www.redrockbikes.com</p>
-                <p>435-555-6689</p>
-            </div>
+                    </div>
+                    <label>
+                        <input type="radio" name="level" id="show-silver" value="silver" onclick="showDetails()"> Silver Membership
+                    </label>
+                    <div id="silver-details" style="display: none;">
+                        <p>Level Details:</p>
+                        <ul>
+                            <li>Fee: $1070</li>
+                            <li>Benefits: Training, Mid Level Advertising, Advocacy, Networking, Luncheons</li>
+                        </ul>
+                    </div>
+                    <label>
+                        <input type="radio" name="level" id="show-gold" onclick="showDetails()" value="gold"> Gold Membership
+                    </label>
+                    <div id="gold-details" style="display: none;">
+                        <p>Level Details:</p>
+                        <ul>
+                            <li>Fee: $1520</li>
+                            <li>Benefits: Training, High Level Spotlight Advertising, Advocacy, Networking, Luncheons, Resources</li>
+                        </ul>
+                    </div>
+                </fieldset>
+                <fieldset id="business-description">
+                    <legend>Business Description</legend>
+                    <label for="description">Description:
+                        <textarea id="description" name="description" rows="5" cols="40"></textarea>
+                    </label>
+                </fieldset>
+                <input type="submit" value="Submit My Membership" class="submitBtn">
+            </form>
         </div>
-
     </main>
     <footer>
         <picture id="footer-img-wrapper">
             <source srcset="images/logo.webp" media="(min-width: 900px)">
             <source srcset="images/logo150.webp" media="(min-width: 400px)">
-            <img id="logo" src="images/logo75.webp" alt="green-valley-logo">
+            <img class="logo" src="images/logo75.webp" alt="green-valley-logo">
         </picture>
         <div id="location">
             <p id="footer-title">Green Valley Chamber of Commerce</p>

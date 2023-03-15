@@ -57,7 +57,7 @@ async function getDirectoryData() {
        p5.setAttribute('class', 'membership');
        p4.setAttribute('class', 'email');
 
-      // Build the h2 content out to show the prophet's full name - finish the template string
+      // Build the h2 content out to show the company's full name - finish the template string
       h3.textContent = `${directory.company}`;
       p1.textContent = `${directory.address},${directory.city},${directory.state} ${directory.zip}`;
       p2.textContent = `${directory.phone}`;
@@ -78,5 +78,3 @@ async function getDirectoryData() {
       card.appendChild(info);
     }) // end of forEach loop
   } // end of function expression
-
-  
