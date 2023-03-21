@@ -1,0 +1,205 @@
+
+:root {
+  --primary-color: #FFFFFF;
+  --secondary-color: #FFE74E;
+  --accent1-color: #A1D644;
+  --accent2-color: #FF5D22;
+  --accent3-color: #F73135;
+
+  
+  --heading-font: 'Gochi Hand', cursive, 'Montserrat', sans-serif;
+  --paragraph-font: 'Montserrat', sans-serif;
+
+  
+  --headline-color-on-white: #F73135;  /* headlines on a white background */ 
+  --headline-color-on-color: white; /* headlines on a colored background */ 
+  --paragraph-color-on-white: black; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #A1D644;
+}
+
+body {
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: 18px;
+  padding: 0;
+}
+nav{
+  display: flex;
+  background-color:var(--accent1-color);
+  width: 100%;
+  padding-right: 20px;
+  justify-content: space-around;
+}
+nav li {
+  list-style: none;
+  overflow: hidden;
+}
+nav ul{
+  padding: 10px 0 10px 0;
+  margin: 0;
+}
+nav a{
+  text-decoration: none;
+  font-size: 30px;
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-color);
+  text-shadow: 0 0 5px black;
+  padding: 20px;
+}
+nav a:hover{
+  color: #F73135; 
+}
+nav li .active{
+  background-color: white;
+  color: #F73135;
+  text-shadow: none;
+
+}
+
+img{
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  padding: 20px 0;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: var(--paragraph-font);
+  color: var(--headline-color-on-white);
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+h1{
+    font-size: 70px;
+    font-weight: 300;
+    font-family: var(--heading-font);
+    text-shadow: 0 18px 15px var(--accent1-color);
+    margin-top: 0;
+}
+h2 {
+  font-size: 1.75rem;
+  margin-top: 5px;
+}
+#font-wrapper h3{
+  background-color: white;
+  padding-left: 20px;
+  border: 3px solid #999;
+}
+#paragraph-wrapper h3{
+  background-color: white;
+  padding-left: 20px;
+  border: 3px solid #999;
+}
+header>h2{
+  margin-top: -20px;
+}
+hr {
+  height: 3px;
+  margin: 35px 0;
+  background: var(--accent2-color);
+}
+header {
+  display: block;
+  padding-bottom: 20px;
+  text-align: center;
+  color: var(--accent3-color);
+  width: 100%;
+  background-color: var(--primary-color);
+  opacity: 0.8;
+  background-size: 20px 20px;
+  background-image:  repeating-linear-gradient(0deg, var(--accent1-color), var(--accent1-color) 1px, var(--primary-color) 1px, var(--primary-color));
+  
+}
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: justify;
+  background-color: var(--primary-color);
+  opacity: 0.8;
+  background-size: 20px 20px;
+  background-image:  repeating-linear-gradient(0deg, var(--accent1-color), var(--accent1-color) 1px, var(--primary-color) 1px, var(--primary-color));
+  
+}
+.title-wrapper{
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #FFFFFF;
+}
+#colors-wrapper{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color);
+  padding: 1em;
+  text-align: left;
+  line-height: 1.5;
+  margin: 50px;
+  background-color: #A1D644;
+}
+.colors1 {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  
+}
+.colors2 {
+  width: 100%;
+  min-width: 350px;
+  margin: 30px auto;
+  
+}
+.colors th {
+  background-color: #999;
+}
+.colors-wrapper td{
+  width: 12%;
+  height: 3em;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+.secondary {
+  background-color: var(--secondary-color);
+}
+.accent1 {
+  background-color: var(--accent1-color);
+}
+.accent2{
+  background-color: var(--accent2-color);
+}
+.accent3{
+  background-color: var(--accent3-color);
+}
+
+p.colored {
+  background-color: var(--paragraph-background-color);
+  color: var(--paragraph-color-on-white);
+}
+td{
+  border: 3px solid #999;
+}
+.wireframe{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.wireframe-img{
+  height: 100%;
+  width: 300px;
+}
+#wireframe-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#wireframe-wrapper h4{
+  margin: 0;
+}
+
