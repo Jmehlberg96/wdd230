@@ -109,7 +109,6 @@ header {
   opacity: 0.8;
   background-size: 20px 20px;
   background-image:  repeating-linear-gradient(0deg, var(--accent1-color), var(--accent1-color) 1px, var(--primary-color) 1px, var(--primary-color));
-  
 }
 main{
   display: flex;
@@ -139,7 +138,8 @@ p {
   text-align: left;
   line-height: 1.5;
   margin: 50px;
-  background-color: #A1D644;
+  background-color: white;
+  border: 3px solid #A1D644;
 }
 .colors1 {
   width: 100%;

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bountiful Foods</title>
+    <meta name="description" content="An organic foods and juice company who focuses on health, nutrition, wellbeing, and quality">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Montserrat&display=swap" rel="stylesheet">    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/main.js" defer></script>  
+    <script src="scripts/weather.js" defer></script>  
+</head>
+<body>
+    <nav>
+        <div>        
+            <img id="logo" src="images/logo-50.webp" alt="green-valley-chamber-logo">
+        </div>
+        <div class="navigation">
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+                <li><a href="index.html" class="active">home</a></li>
+                <li><a href="fresh.html">fresh</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="contact.html">about us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <picture class="header-img-wrapper">
+            <source media="(min-width: 900px)" srcset="images/hero-img-large.webp 1x">
+            <source media="(min-width: 400px)" srcset="images/hero-img-med.webp 1x">
+            <img id="hero-img" src="images/hero-img-small.webp" alt="hero-image" width="1600" height="500">
+        </picture>
+        <h1>BOUNTIFUL FOODS</h1>
+        <h2>HEALTHY FRESH</h2>
+    </header>
+    <main class="main-wrapper">
+        <div class="card-wrapper">
+            <img src="images/drinks.webp" alt="fruit-drink" loading="lazy">
+            <div class="fresh-button">
+                <a href="fresh.html" class="fresh-drink">Create Drinks</a>
+                <div id="paragraph-container">
+                    <p>Are you tired of boring, store-bought fruit drinks that are full of preservatives and artificial flavors? Do you want to create your own fresh, healthy, and delicious fruit drink mix? Look no further than Bountiful Foods!</p><br>
+                    <p>Bountiful Foods is a company that supplies fresh, organic fruit and custom-made fruit drinks. With their high-quality ingredients, you can create your own unique fruit drink mix that's tailored to your taste preferences.</p><br>  
+                    <p>Simply visit our website, select your favorite fruits, and we can deliver them right to your doorstep. Then, get creative and mix and match your fruits to create your perfect blend. The possibilities are endless!</p><br>    
+                    <p>By choosing Bountiful Foods, you'll not only be supporting a company that values sustainability and organic farming, but you'll also be treating yourself to a delicious and healthy beverage.</p><br>    
+                    <p>So what are you waiting for? Take the first step towards making your own custom fruit drink mix today with Bountiful Foods!</p><br>
+                </div>                    
+                <p id="count">Drinks Made: <span id="form-count"></span></p>
+            </div>
+        </div>
+        <div class="card" id="weather">
+            <div class="weather-data">
+                <h3 id="figcaption"></h3>
+                <img id="weather-icon">
+                <div class="weather-info">
+                    <p class="temperature">Temp:  <span id="temperature"> </span> ℉</p>
+                    <hr>
+                    <p>Wind Speed: <span id="wind-speed"></span> m/h</p>
+                    <p>Humidity: <span id="humidity"></span></p>
+                </div>
+            </div>
+            <div id="forecast">
+                <p>Forecast:</p>
+                <div>
+                    <p><span id="day1"></span></p>
+                    <p><span id="temp1"></span></p>
+                    <hr>
+                </div>
+                <div>
+                    <p><span id="day2"></span></p>
+                    <p><span id="temp2"></span></p>
+                    <hr>
+                </div>
+                <div>
+                    <p><span id="day3"></span></p>
+                    <p><span id="temp3"></span></p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <div class="card-wrapper">
+            <img src="images/fruit-for-all.webp" alt="fruit" loading="lazy">
+            <div class="blog-button">
+                <a href="blog.html" class="blog">Blog</a>
+                <div id="donation-container">
+                   <h3>Fruit For All</h3>
+                   <p id="sub-title">HEALTHY FOOD FOR EVERYONE</p>
+                   <p>Check out our blog to learn more about how we help our community have access to fresh fruit and a healthier lifestyle.</p>
+                </div>
+                <p id="count">Carlsbad, CA</p>
+            </div>
+        </div>
+        <div id="paragraph-container">
+            <div style="float: left; margin-right: 10px">
+                <img src="images/fruit.webp" alt="fruit" loading="lazy">
+            </div>
+            <p>Carlsbad is a coastal city located in the northern 
+                part of San Diego County, California. It has a 
+                population of approximately 115,000 residents and 
+                is known for its beautiful beaches, upscale resorts, 
+                and family-friendly attractions.</p>
+            <p>Some of the popular attractions in Carlsbad include 
+                the LEGOLAND California Resort, the Carlsbad Premium 
+                Outlets shopping center, the Flower Fields at Carlsbad 
+                Ranch, and the Agua Hedionda Lagoon.</p>
+            <p>The city is also home to several high-tech industries, 
+                including biotechnology, telecommunications, and 
+                software development. It is considered one of the 
+                wealthiest and most educated cities in the country.</p>   
+            <p>Carlsbad's Mediterranean climate features mild, wet 
+                winters and warm, dry summers, making it an ideal year-
+                round destination for outdoor activities such as surfing, 
+                hiking, and golfing.</p>  
+        </div>
+        <picture class="img-wrapper">
+            <source media="(min-width: 900px)" srcset="images/food-truck-large.webp 1x">
+            <source media="(min-width: 400px)" srcset="images/food-truck-med.webp 1x">
+            <img src="images/food-truck-small.webp" alt="food-truck" width="1200" height="500" loading="lazy">
+        </picture>
+    </main>
+    <footer>
+        <picture id="footer-img-wrapper">
+            <source srcset="images/logo-50.webp" media="(min-width: 900px)">
+            <source srcset="images/logo-med.webp" media="(min-width: 400px)">
+            <img class="logo" src="images/logo-sm.webp" alt="green-valley-logo" loading="lazy">
+        </picture>
+        <div id="location">
+            <p id="footer-title">Bountiful Food</p>
+            <p id="address">7201 Carlsbad Blvd, Carlsbad, CA 92008</p>
+        </div>
+        <div id="contact">
+            <p>contact-us@bountiful-foods.com</p>
+            <p>760-555-3443</p>
+            <a href="https://goo.gl/maps/W4yNAJxVxU5387Br5">📍Location Map</a>
+        </div>
+        <div id="baseline">
+            <p> &copy;<span id="year"></span>Bountiful Foods | Last Updated: <span id='last-update'></span> | <a href="https://openweathermap.org/">Open Weather Map</a></p>
+        </div>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.webp" alt="fb icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.webp" alt="instagram icon">
+            </a>
+            <a href="https://pinterest.com" target="_blank">
+                <img src="images/pinterest.webp" alt="instagram icon">
+            </a>
+        </div>
+    </footer> 
+    <script src="scripts/main.js" defer></script>  
+</body>
+</html>
