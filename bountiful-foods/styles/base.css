@@ -210,7 +210,7 @@ p{
   padding: 0 20px;
   margin-bottom: 20px;
 }
-#count{
+.count{
   font-size: 20px;
   padding-top: 10px;
 }
@@ -275,20 +275,20 @@ hr{
   background: var(--accent3-color);
   border: none;
 }
-.card-wrapper #paragraph-container{
+.card-wrapper .paragraph-container{
   background-color: white;
 }
-#paragraph-container {
+.paragraph-container {
   height: 300px;
   overflow: scroll;
   border: 3px solid;
   background-color: var(--accent1-color);
 }
-#paragraph-container p{
+.paragraph-container p{
   font-size: 15px;
   margin-top: 10px;
 }
-#paragraph-container img{
+.paragraph-container img{
   width: 150px;
   height: 150px;
   margin: 10px;

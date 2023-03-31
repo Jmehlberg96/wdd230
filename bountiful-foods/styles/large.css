@@ -44,14 +44,14 @@
         height: 500px;
     }
      /*-------------Main-----------------------*/
-    #paragraph-container {
+    .paragraph-container {
         height: 350px;
         margin-top: 20px;
       }
-      #paragraph-container p{
+      .paragraph-container p{
         font-size: 25px;
       }
-      #paragraph-container img{
+      .paragraph-container img{
         width: 250px;
         height: 250px;
       }
@@ -67,7 +67,7 @@
     #weather{
         width:28%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
     .card-wrapper{
         width: 25%;
@@ -77,7 +77,7 @@
     .fresh-button a, .blog-button a{
         margin-top: 20px; 
     }
-    .fresh-button #paragraph-container p{
+    .fresh-button .paragraph-container p{
         font-size: 18px;
     }
     main{
@@ -98,10 +98,13 @@
         justify-content: center;
     }
     #forecast p{
-        font-size: 35px;
+        font-size: 27px;
     }
     .weather-info p{
         font-size: 25px;
+    }
+    .count{
+        font-size: 30px;
     }
     /*----------------------Fresh-----------------------------*/
 
@@ -219,10 +222,5 @@ caption{
 #blog-sub-title{
     font-size: 55px;
   }
-
-
-
-
-
 
 }
