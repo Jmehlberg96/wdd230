@@ -1,20 +1,20 @@
 
     // Get the form and the order summary div
-    var orderForm = document.getElementById('order-form');
-    var orderSummary = document.getElementById('order-summary');
+    const orderForm = document.getElementById('order-form');
+    const orderSummary = document.getElementById('order-summary');
   
     // Populate the select elements with fruit options from the JSON data source
     async function populateSelectElements() {
       try {
-        var response = await fetch('https://brotherblazzard.github.io/canvas-content/fruit.json');
-        var data = await response.json();
-        var fruits = data;
-        var selectElements = document.getElementsByTagName('select');
-        for (var i = 0; i < selectElements.length; i++) 
+        const response = await fetch('https://brotherblazzard.github.io/canvas-content/fruit.json');
+        const data = await response.json();
+        const fruits = data;
+        const selectElements = document.getElementsByTagName('select');
+        for (let i = 0; i < selectElements.length; i++) 
         {
-          for (var j = 0; j < fruits.length; j++) 
+          for (let j = 0; j < fruits.length; j++) 
           {
-            var option = document.createElement('option');
+            const option = document.createElement('option');
             option.text = fruits[j].name;
             option.value = fruits[j].name;
             selectElements[i].add(option);
@@ -33,26 +33,27 @@
       event.preventDefault(); // prevent the form from submitting normally
   
       // Get the input values from the form
-      var firstName = document.getElementById('first-name').value;
-      var email = document.getElementById('email').value;
-      var phone = document.getElementById('phone').value;
-      var fruit1 = document.getElementById('fruit1').value;
-      var fruit2 = document.getElementById('fruit2').value;
-      var fruit3 = document.getElementById('fruit3').value;
-      var specialInstructions = document.getElementById('special-instructions').value;
+      const firstName = document.getElementById('first-name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const fruit1 = document.getElementById('fruit1').value;
+      const fruit2 = document.getElementById('fruit2').value;
+      const fruit3 = document.getElementById('fruit3').value;
+      const specialInstructions = document.getElementById('special-instructions').value;
   
       // Calculate the total amount of carbohydrates, protein, fat, sugar, and calories
       async function populateSummary() {
         try {
-            var response = await fetch('https://brotherblazzard.github.io/canvas-content/fruit.json');
-            var data = await response.json();
-            var totalCarbs = 0;
-            var totalProtein = 0;
-            var totalFat = 0;
-            var totalSugar = 0;
-            var totalCalories = 0;
-            var fruits = data;
-            for (var i = 0; i < fruits.length; i++) 
+            const response = await fetch('https://brotherblazzard.github.io/canvas-content/fruit.json');
+            const data = await response.json();
+            console.log(response);
+            let totalCarbs = 0;
+            let totalProtein = 0;
+            let totalFat = 0;
+            let totalSugar = 0;
+            let totalCalories = 0;
+            const fruits = data;
+            for (let i = 0; i < fruits.length; i++) 
             {
                 if (fruits[i].name === fruit1 || fruits[i].name === fruit2 || fruits[i].name === fruit3) 
                 {
@@ -63,19 +64,19 @@
                 totalCalories += fruits[i].nutritions.calories;
                 }
             }
-            var orderSummary = document.getElementById('order-summary');
+            const orderSummary = document.getElementById('order-summary');
       
             // Create the order summary message
-            var orderSummaryMessage = '<p><strong>Name: </strong> ' + firstName + '</p>' +
+            let orderSummaryMessage = '<p><strong>Name: </strong> ' + firstName + '</p>' +
                                       '<p><strong>Email: </strong> ' + email + '</p>' +
                                       '<p><strong>Phone: </strong> ' + phone + '</p>' +
                                       '<p><strong>Fruits: </strong> ' + fruit1 + ', ' + fruit2 + ', ' + fruit3 + '</p>' +
                                       '<p><strong>Special Instructions: </strong> ' + specialInstructions + '</p>' +
-                                      '<p><strong>Total Carbs: </strong> ' + totalCarbs.toFixed(2) + ' g</p>' +
+                                      '<p><strong>Total Carbs: </strong> ' + totalCarbs.toFixed(2) + 'g</p>' +
                                       '<p><strong>Total Protein: </strong> ' + totalProtein.toFixed(2) + ' g</p>' +
                                       '<p><strong>Total Fat: </strong> ' + totalFat.toFixed(2) + ' g</p>' +
                                       '<p><strong>Total Sugar: </strong> ' + totalSugar.toFixed(2) + ' g</p>' +
-                                      '<p><strong>Total Calories: </strong>' + totalCalories.toFixed(2) + ' g</p>';
+                                      '<p><strong>Total Calories: </strong>' + totalCalories.toFixed(2) + '</p>';
 
                                         orderSummary.innerHTML = orderSummaryMessage;
             } catch (error) 
@@ -84,7 +85,7 @@
             }
         }populateSummary();
         
-        var formCount = localStorage.getItem('formCount') || 0;
+        let formCount = localStorage.getItem('formCount') || 0;
         localStorage.setItem('formCount', ++formCount);
     })
     

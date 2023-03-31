@@ -10,8 +10,8 @@ const x = document.getElementById('hamburgerBtn');
 x.onclick = toggleMenu;
 
 // Get the form count from localStorage and display it on the home page
-var formCount = localStorage.getItem('formCount') || 0;
-var formCountElement = document.getElementById('form-count');
+const formCount = localStorage.getItem('formCount') || 0;
+const formCountElement = document.getElementById('form-count');
 formCountElement.textContent = formCount;
 
 
@@ -95,10 +95,10 @@ async function getWeatherForecast() {
         const dayOfWeek = daysOfWeek[date.getDay()]; // Get the day of the week from the date
       
         // Populate the HTML with the day of the week and its corresponding temperatures
-        const dayElement = document.querySelector(`#day${i + 1}`);
-        const tempElement = document.querySelector(`#temp${i + 1}`);
+        let dayElement = document.querySelector(`#day${i + 1}`);
+        let tempElement = document.querySelector(`#temp${i + 1}`);
         dayElement.textContent = dayOfWeek;
-        tempElement.innerHTML = `${forecast.main.temp_min.toFixed(0)}°F / ${forecast.main.temp_max.toFixed(0)}°F`;
+        tempElement.textContent = `${forecast.main.temp_min.toFixed(0)}°F / ${forecast.main.temp_max.toFixed(0)}°F`;
       }
 
     } else {
