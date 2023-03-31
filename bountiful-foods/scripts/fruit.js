@@ -1,6 +1,4 @@
-// Wait for the DOM to finish loading
-// document.addEventListener('DOMContentLoaded', function() 
-// {
+
     // Get the form and the order summary div
     var orderForm = document.getElementById('order-form');
     var orderSummary = document.getElementById('order-summary');
@@ -90,4 +88,15 @@
         localStorage.setItem('formCount', ++formCount);
     })
     
-// })  
+//---------------for the date in the footer-------------
+document.querySelector('#year').innerHTML = new Date().toLocaleDateString('en-US', {year: 'numeric'});
+document.getElementById('last-update').textContent = document.lastModified
+
+function toggleMenu()
+{
+    document.getElementById("primaryNav").classList.toggle("open");
+    document.getElementById("hamburgerBtn").classList.toggle("open");
+}
+const x = document.getElementById('hamburgerBtn');
+x.onclick = toggleMenu;
+
