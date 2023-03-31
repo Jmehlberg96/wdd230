@@ -133,17 +133,34 @@
     width: 80%;
     justify-content: space-evenly;
   }
+  #summary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
   #order-summary{
-    height: 70%;
-    margin-top: 10%;
+    height: 40%;
+    margin-top: 0;
     margin-left: 20px;
     margin-right: 20px;
     border-bottom: var(--accent3-color) solid 20px;
     border-top: var(--accent3-color) solid 20px;
     border-radius: 20px;
+    width: 200px;
+    margin-bottom: 20px;
   }
   #special-instructions{
     font-size: 20px;
+  }
+  .juice{
+    display:block;
+  }
+  .juice img{
+      border: 3px solid;
+      box-shadow: 5px 5px 5px;
+      width: 200px;
+      height: 200px;
   }
 
   /*---------------about us---------------*/

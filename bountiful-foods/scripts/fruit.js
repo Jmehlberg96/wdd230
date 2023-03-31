@@ -68,17 +68,16 @@
             var orderSummary = document.getElementById('order-summary');
       
             // Create the order summary message
-            var orderSummaryMessage = '<h2>Order Summary</h2>' +
-                                        '<p><strong>Name: </strong> ' + firstName + '</p>' +
-                                        '<p><strong>Email: </strong> ' + email + '</p>' +
-                                        '<p><strong>Phone: </strong> ' + phone + '</p>' +
-                                        '<p><strong>Fruits: </strong> ' + fruit1 + ', ' + fruit2 + ', ' + fruit3 + '</p>' +
-                                        '<p><strong>Special Instructions: </strong> ' + specialInstructions + '</p>' +
-                                        '<p><strong>Total Carbs: </strong> ' + totalCarbs.toFixed(2) + ' g</p>' +
-                                        '<p><strong>Total Protein: </strong> ' + totalProtein.toFixed(2) + ' g</p>' +
-                                        '<p><strong>Total Fat: </strong> ' + totalFat.toFixed(2) + ' g</p>' +
-                                        '<p><strong>Total Sugar: </strong> ' + totalSugar.toFixed(2) + ' g</p>' +
-                                        '<p><strong>Total Calories: </strong>' + totalCalories.toFixed(2) + ' g</p>';
+            var orderSummaryMessage = '<p><strong>Name: </strong> ' + firstName + '</p>' +
+                                      '<p><strong>Email: </strong> ' + email + '</p>' +
+                                      '<p><strong>Phone: </strong> ' + phone + '</p>' +
+                                      '<p><strong>Fruits: </strong> ' + fruit1 + ', ' + fruit2 + ', ' + fruit3 + '</p>' +
+                                      '<p><strong>Special Instructions: </strong> ' + specialInstructions + '</p>' +
+                                      '<p><strong>Total Carbs: </strong> ' + totalCarbs.toFixed(2) + ' g</p>' +
+                                      '<p><strong>Total Protein: </strong> ' + totalProtein.toFixed(2) + ' g</p>' +
+                                      '<p><strong>Total Fat: </strong> ' + totalFat.toFixed(2) + ' g</p>' +
+                                      '<p><strong>Total Sugar: </strong> ' + totalSugar.toFixed(2) + ' g</p>' +
+                                      '<p><strong>Total Calories: </strong>' + totalCalories.toFixed(2) + ' g</p>';
 
                                         orderSummary.innerHTML = orderSummaryMessage;
             } catch (error) 
