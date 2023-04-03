@@ -1,4 +1,4 @@
-document.querySelector('#year').innerHTML = new Date().toLocaleDateString('en-US', {year: 'numeric'});
+document.getElementById('year').innerHTML = new Date().getFullYear();
 document.getElementById('last-update').textContent = document.lastModified
 
 function toggleMenu()
@@ -6,7 +6,7 @@ function toggleMenu()
     document.getElementById("primaryNav").classList.toggle("open");
     document.getElementById("hamburgerBtn").classList.toggle("open");
 }
-const x = document.getElementById('hamburgerBtn');
+ const x = document.getElementById('hamburgerBtn');
 x.onclick = toggleMenu;
 
 // Get the form count from localStorage and display it on the home page

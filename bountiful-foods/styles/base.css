@@ -148,7 +148,7 @@ header {
 }
 .header-img-wrapper{
   border-bottom: 10px solid var(--accent1-color);
-  width: 375px;
+  width: 400px;
   height: 200px;
 }
 .header-img-wrapper img{
