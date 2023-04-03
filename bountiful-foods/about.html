@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bountiful Foods</title>
-    <meta name="description" content="An organic foods and juice company who focuses on health, nutrition, wellbeing, and quality">
+    <title>Bountiful Foods About Page</title>
+    <meta name="description" content="An about page that describes an organic foods and juice company who focuses on health, nutrition, wellbeing, and quality">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="favicon.ico" type="image/x-icon" >
@@ -18,9 +18,10 @@
 </head>
 <body>
     <nav>
-        <div>        
-            <img id="logo" src="images/logo-50.webp" alt="green-valley-chamber-logo">
-        </div>
+        <picture>
+            <source media="(min-width: 400px)" srcset="images/logo-med.webp 1x">        
+            <img id="logo" src="images/logo-sm.webp" alt="bountiful-foods-logo" height="50" width="50">
+        </picture>
         <div class="navigation">
             <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
             <ul id="primaryNav">
@@ -62,7 +63,7 @@
         </div>
         <div id="map-image">
             <div id="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3342.3424565566675!2d-117.31954818507239!3d33.10007958087565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc72d5d2124ea1%3A0xa3a483c7f2c73481!2s7102%20Carlsbad%20Blvd%2C%20Carlsbad%2C%20CA%2092011!5e0!3m2!1sen!2sus!4v1680220953658!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                
+                <iframe title="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3342.3424565566675!2d-117.31954818507239!3d33.10007958087565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc72d5d2124ea1%3A0xa3a483c7f2c73481!2s7102%20Carlsbad%20Blvd%2C%20Carlsbad%2C%20CA%2092011!5e0!3m2!1sen!2sus!4v1680220953658!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                
             </div>
             <div id="form-table-wrapper">
                 <div id="join-table">
@@ -144,7 +145,7 @@
             <a href="https://goo.gl/maps/W4yNAJxVxU5387Br5">📍Location Map</a>
         </div>
         <div id="baseline">
-            <p> &copy;<span id="year"></span>Bountiful Foods | Last Updated: <span id='last-update'></span> | <a href="https://openweathermap.org/">Open Weather Map</a></p>
+            <p> &copy;<span id="year"></span> Bountiful Foods | Last Updated: <span id='last-update'></span> | <a href="siteplan/index.html">Site Plan</a> | <a href="https://openweathermap.org/">Open Weather Map</a></p>
         </div>
         <div class="social">
             <a href="https://facebook.com" target="_blank">
@@ -157,7 +158,6 @@
                 <img src="images/pinterest.webp" alt="instagram icon">
             </a>
         </div>
-    </footer> 
-    <script src="scripts/main.js" defer></script>  
+    </footer>   
 </body>
 </html>

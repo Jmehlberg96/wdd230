@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bountiful Foods</title>
-    <meta name="description" content="An organic foods and juice company who focuses on health, nutrition, wellbeing, and quality">
+    <title>Bountiful Foods Blog Page</title>
+    <meta name="description" content="A blog page that shows all the activities of the company and advertises new and current products">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="favicon.ico" type="image/x-icon" >
@@ -18,9 +18,10 @@
 </head>
 <body>
     <nav>
-        <div>        
-            <img id="logo" src="images/logo-50.webp" alt="green-valley-chamber-logo">
-        </div>
+        <picture>
+            <source media="(min-width: 400px)" srcset="images/logo-med.webp 1x">        
+            <img id="logo" src="images/logo-sm.webp" alt="bountiful-foods-logo" height="50" width="50">
+        </picture>
         <div class="navigation">
             <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
             <ul id="primaryNav">
@@ -215,7 +216,7 @@
             <a href="https://goo.gl/maps/W4yNAJxVxU5387Br5">📍Location Map</a>
         </div>
         <div id="baseline">
-            <p> &copy;<span id="year"></span>Bountiful Foods | Last Updated: <span id='last-update'></span> | <a href="https://openweathermap.org/">Open Weather Map</a></p>
+            <p> &copy;<span id="year"></span> Bountiful Foods | Last Updated: <span id='last-update'></span> | <a href="siteplan/index.html">Site Plan</a> | <a href="https://openweathermap.org/">Open Weather Map</a></p>
         </div>
         <div class="social">
             <a href="https://facebook.com" target="_blank">
@@ -229,6 +230,5 @@
             </a>
         </div>
     </footer> 
-    <script src="scripts/main.js" defer></script>  
 </body>
 </html>
