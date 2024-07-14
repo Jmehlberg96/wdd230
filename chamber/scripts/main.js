@@ -16,6 +16,7 @@ const options = {year: 'numeric'};
         document.querySelector('#year').innerHTML = new Date().toLocaleDateString('en-US', options);
         document.getElementById('last-update').textContent = document.lastModified
 
+// navigation button
 function toggleMenu(){
     document.getElementById("primaryNav").classList.toggle("open");
     document.getElementById("hamburgerBtn").classList.toggle("open");
